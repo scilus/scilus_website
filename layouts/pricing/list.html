@@ -8,8 +8,8 @@
         {{ with .Params.basic }}
         <div class="card shadow">
           <div class="card-body text-center py-5">
-            <h3 class="mb-4">{{ .name | markdownify }}</h3>
-            <span class="price">{{ .price }}</span><span>/{{ .price_per }}</span>
+            <h3 class="mb-9">{{ .name | markdownify }}</h3>
+            <span class="price">{{ .price }}</span><span>{{ .price_per }}</span>
             <p class="lead">{{ .info | markdownify }}</p>
             <ul class="list-unstyled mb-5">
               {{ range .services }}
@@ -25,12 +25,13 @@
         </div>
         {{ end }}
       </div>
+
       <div class="col-lg-4 col-recommended">
         {{ with .Params.professional }}
         <div class="card border-0 shadow-lg">
           <div class="card-body text-center py-5">
             <h3 class="mb-4">{{ .name | markdownify }}</h3>
-            <span class="price">{{ .price }}</span><span>/{{ .price_per }}</span>
+            <span class="price">{{ .price }}</span><span>{{ .price_per }}</span>
             <p class="lead">{{ .info | markdownify }}</p>
             <ul class="list-unstyled mb-5">
               {{ range .services }}
@@ -46,12 +47,13 @@
         </div>
         {{ end }}
       </div>
+
       <div class="col-lg-4 mb-5 mb-lg-0 px-3 pr-3 px-lg-0">
         {{ with .Params.business }}
         <div class="card shadow">
           <div class="card-body text-center py-5">
             <h3 class="mb-4">{{ .name | markdownify }}</h3>
-            <span class="price">{{ .price }}</span><span>/{{ .price_per }}</span>
+            <span class="price">{{ .price }}</span><span>{{ .price_per }}</span>
             <p class="lead">{{ .info | markdownify }}</p>
             <ul class="list-unstyled mb-5">
               {{ range .services }}

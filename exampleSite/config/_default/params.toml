@@ -1,6 +1,6 @@
 #################### default parameters ################################
 logo = "images/logo.png"
-logo_width = "200px"
+logo_width = "100px"
 # OpenGraph / Twitter Card metadata
 description = "This is meta description"
 author = "Themefisher"
@@ -18,7 +18,7 @@ preloader = "" # use jpg, png, svg or gif format.
 
 # Navigation buttons
 [navigation_button]
-enable = true
+enable = false
 label = "Get Started"
 link = "contact"
 
@@ -28,24 +28,24 @@ enable = false
 expire_days = 2
 content = "This site uses cookies. By continuing to use this website, you agree to their use."
 button = "I Accept"
-  
+
 ############################# social site ########################
 [[social]]
 title = "facebook"
 icon = "fab fa-facebook" # themify icon : https://themify.me/themify-icons
-link = "#"
+link = "https://www.facebook.com/SCIL.2500"
 
 [[social]]
 title = "twitter"
 icon = "fab fa-twitter" # themify icon : https://themify.me/themify-icons
-link = "#"
+link = "https://twitter.com/maxdescoteaux"
 
 [[social]]
-title = "skype"
-icon = "fab fa-skype" # themify icon : https://themify.me/themify-icons
-link = "#"
+title = "github"
+icon = "fab fa-github" # themify icon : https://themify.me/themify-icons
+link = "https://github.com/scilus"
 
 [[social]]
 title = "linkedin"
 icon = "fab fa-linkedin" # themify icon : https://themify.me/themify-icons
-link = "#"
+link = "https://www.linkedin.com/in/maxime-descoteaux-2445701/"

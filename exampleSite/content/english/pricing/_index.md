@@ -1,56 +1,53 @@
 ---
-title: "Pricing"
+title: "Teaching"
 subtitle: ""
 # meta description
-description: "This is meta description"
+description: ""
 draft: false
 
 basic:
-  name : "Basic Plan"
-  price: "$49"
-  price_per : "month"
-  info : "Best For Small Individuals"
+  name : "IMN359"
+  #price: "A2022"
+  # price_per : "month"
+  info : "**Outils mathématiques du traitement d’images**"
   services:
-  - "Express Service"
-  - "Customs Clearance"
-  - "Time-Critical Services"
+   - "Automne 2022"
   button:
     enable : true
-    label : "Get started for free"
-    link : "#"
-    
-professional:
-  name : "Professional Plan"
-  price: "$49"
-  price_per : "month"
-  info : "Best For Professionals"
-  services:
-  - "Express Service"
-  - "Customs Clearance"
-  - "Time-Critical Services"
-  - "Cloud Service"
-  - "Best Dashboard"
-  button:
-    enable : true
-    label : "Get started for free"
-    link : "#"
-    
+    label : "Notes et support de cours"
+    link : "courses/imn359"
+
+#professional:
+#  name : "IMN764"
+#  price: "$49"
+#  price_per : "month"
+#  info : "Best For Professionals"
+#  services:
+#  - "Express Service"
+#  - "Customs Clearance"
+#  - "Time-Critical Services"
+#  - "Cloud Service"
+#  - "Best Dashboard"
+#  button:
+#    enable : true
+#    label : "Get started for free"
+#    link : "#"
+
 business:
-  name : "Business Plan"
-  price: "$49"
-  price_per : "month"
-  info : "Best For Large Individuals"
+  name : "IMN530/IMN708"
+#  price: "A2022"
+  # price_per : "month"
+  info : "**Reconstruction et analyse d’images médicales**"
   services:
-  - "Express Service"
-  - "Customs Clearance"
-  - "Time-Critical Services"
+  - "Automne 2022"
   button:
     enable : true
-    label : "Get started for free"
-    link : "#"
+    label : "Lien vers le cours"
+    link : "https://sites.google.com/site/renauldemmanuelle/enseignement-imn530"
+
 
 call_to_action:
-  enable : true
+  enable : false
   title : "Need a larger plan?"
   image : "images/cta.svg"
   content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur."
