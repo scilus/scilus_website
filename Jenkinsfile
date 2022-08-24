@@ -1,7 +1,5 @@
 pipeline {
-    agent {
-        label 'scil.usherbrooke.ca'
-    }
+    agent any
     stages {
         stage ('build') {
             steps {
