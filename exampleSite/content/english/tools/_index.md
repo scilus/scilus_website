@@ -16,7 +16,7 @@ draft: false
 {{</ faq >}}
 
 {{< faq "Containers" >}}
-The SCIL distributes a few containers that can be used to run the [TractoFlow](https://github.com/scilus/tractoflow) pipeline, as well as easily interact with various diffusion MRI focused tools. See the [containers list]() for downloads.
+The SCIL distributes a few containers that can be used to run the [TractoFlow](https://github.com/scilus/tractoflow) pipeline, as well as easily interact with various diffusion MRI focused tools. See the [containers list](https://scil.usherbrooke.ca/pages/containers/) for downloads.
 {{</ faq >}}
 
 {{< faq "MI-Brain" >}}

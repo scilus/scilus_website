@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "http://demo.gethugothemes.com/bigspring-light/examplesite/"
+baseURL = "https://scil.usherbrooke.ca/"
 title = "SCIL"
 theme = "scilus_website"
 # post pagination
