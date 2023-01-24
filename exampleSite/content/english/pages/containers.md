@@ -10,9 +10,7 @@ draft: false
 
 ## List of singularity images
 
-- <a href="containers/scilus_1.4.1.sif" download="containers/scilus_1.4.1.sif">scilus_1.4.1.sif</a>
-
-- <a href="containers/scilus_1.4.0.sif" download="containers/scilus_1.4.0.sif">scilus_1.4.0.sif</a>
+- <a href="containers/scilus_1.4.2.sif" download="containers/scilus_1.4.2.sif">scilus_1.4.2.sif</a>
 
 - <a href="containers/scilus_1.3.0.sif" download="containers/scilus_1.3.0.sif">scilus_1.3.0.sif</a>
 
