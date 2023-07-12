@@ -45,11 +45,11 @@ sections:
   path: exampleSite/content/deutsch/contact/_index.md
   label: Contact (de)
 - type: document
-  path: exampleSite/content/english/teaching/_index.md
-  label: Teaching (en)
+  path: exampleSite/content/english/pricing/_index.md
+  label: Pricing (en)
 - type: document
-  path: exampleSite/content/deutsch/teaching/_index.md
-  label: Teaching (de)
+  path: exampleSite/content/deutsch/pricing/_index.md
+  label: Pricing (de)
 - type: document
   path: exampleSite/content/english/faq/_index.md
   label: FAQ (en)
