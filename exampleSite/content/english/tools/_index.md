@@ -12,7 +12,7 @@ Most of the SCIL pipelines are based on [Nextflow](https://www.nextflow.io/) pip
 
 
 {{< faq "Tractoflow" >}}
-[TractoFlow](https://github.com/scilus/tractoflow) is our recommended processing pipeline, starting from raw DWI up to the generation of whole brain tractograms. It is robust, efficient and fully reproducible, .
+[TractoFlow](https://github.com/scilus/tractoflow) is our recommended processing pipeline, starting from raw DWI up to the generation of whole brain tractograms. It is robust, efficient and fully reproducible.
 {{</ faq >}}
 
 {{< faq "Rbx_flow" >}}
@@ -20,11 +20,11 @@ Most of the SCIL pipelines are based on [Nextflow](https://www.nextflow.io/) pip
 {{</ faq >}}
 
 {{< faq "Tractometry_flow" >}}
-[Tractometry_flow](https://github.com/scilus/tractometry_flow) pipeline allows you to extract tractometry information by combining subjects's fiber bundles and diffusion MRI metrics.
+[Tractometry_flow](https://github.com/scilus/tractometry_flow) pipeline allows you to extract tractometry information by combining subjects's fiber bundles and any metric in diffusion space.
 {{</ faq >}}
 
 {{< faq "Connectoflow" >}}
-[ConnectoFlow](https://github.com/scilus/connectoflow) is a state-of-the-art structural connectivity pipeline.
+[ConnectoFlow](https://github.com/scilus/connectoflow) is a state-of-the-art structural connectivity (connectomics) pipeline.
 {{</ faq >}}
 
 {{< faq "Bst_flow" >}}
@@ -48,11 +48,11 @@ Most of the SCIL pipelines are based on [Nextflow](https://www.nextflow.io/) pip
 <div class="row">
 
 {{< faq "Dmriqc_flow" >}}
-[Dmriqc_flow](https://github.com/scilus/dmriqc_flow) is our pipeline for diffusion MRI quality check. Using different profiles you'll be able to QC any output from any **scil flows**.
+[Dmriqc_flow](https://github.com/scilus/dmriqc_flow) is our pipeline for diffusion MRI quality check. Using different profiles you'll be able to QC any output from most **scil flows** mentioned above.
 {{</ faq >}}
 
 {{< faq "Combine_flows" >}}
-[Combine_flows](https://github.com/scilus/combine_flows) is a collection of bash scripts that glues all our flows together.
+[Combine_flows](https://github.com/scilus/combine_flows) is a collection of bash scripts that glues or connects all our flows together. These scripts mostly create a valid input strucuture for a flow, based on the output structure of another flow.  
 {{</ faq >}}
 
 {{< faq "Containers" >}}
