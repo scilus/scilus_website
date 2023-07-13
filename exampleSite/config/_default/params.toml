@@ -49,3 +49,8 @@ link = "https://github.com/scilus"
 title = "linkedin"
 icon = "fab fa-linkedin" # themify icon : https://themify.me/themify-icons
 link = "https://www.linkedin.com/in/maxime-descoteaux-2445701/"
+
+[[social]]
+title = "id"
+icon = "fa fa-id-badge"
+link = "https://scil.usherbrooke.ca/pages/mdescoteaux"
