@@ -8,7 +8,7 @@ pipeline {
         }
         stage ('deploy') {
             steps {
-                sh 'rsync --delete -r "$WORKSPACE/scil.usherbrooke.ca/" jenkins@dinf-geospize2:/var/www/scil.usherbrooke.ca/'
+                sh 'rsync --delete -r "$WORKSPACE/scil.usherbrooke.ca/" jenkins@scil.usherbrooke.ca:/var/www/scil.usherbrooke.ca/'
             }
         }
     }
