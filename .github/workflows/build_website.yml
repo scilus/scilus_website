@@ -8,14 +8,17 @@ on:
     branches:
       - master
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   deploy:
     runs-on: scil-website-runners
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}
+
     steps:
-      - name: action_checkout
-        uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4.1.1
         
       - name: Install dependancies
         run: |
