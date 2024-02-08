@@ -14,8 +14,9 @@ jobs:
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
-      - uses: actions/checkout@v4
-
+      - name: action_checkout
+        uses: actions/checkout@v4
+        
       - name: Install dependancies
         run: |
           sudo apt-get update
