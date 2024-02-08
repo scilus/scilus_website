@@ -17,14 +17,14 @@ jobs:
     runs-on: scil-website-runners
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4.1.1
-        
       - name: Install dependancies
         run: |
           sudo apt-get update
           sudo apt-get install -y \
           git
+
+      - name: Checkout repository
+        uses: actions/checkout@v4.1.1
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
