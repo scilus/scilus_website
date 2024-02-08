@@ -10,7 +10,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: scilus-runners
+    runs-on: scil-website-runners
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
