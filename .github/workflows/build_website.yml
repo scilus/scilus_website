@@ -21,7 +21,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y \
-          git
+          git rsync
 
       - name: Checkout repository
         uses: actions/checkout@v4.1.1
@@ -31,7 +31,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: 'latest'
+          hugo-version: '0.123.8'
           extended: true
 
       - name: Build
