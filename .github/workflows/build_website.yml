@@ -37,4 +37,4 @@ jobs:
       - name: Build
         run: hugo -D -F -b "https://scil.usherbrooke.ca" -d scil.usherbrooke.ca
       - name: Deploy
-        run: rsync --delete -r "$WORKSPACE/scil.usherbrooke.ca/" bora2502@scil.usherbrooke.ca:/var/www/bk_scil.usherbrooke.ca/
+        run: rsync -v --delete -r "$WORKSPACE/scil.usherbrooke.ca/" bora2502@scil.usherbrooke.ca:/var/www/bk_scil.usherbrooke.ca/
