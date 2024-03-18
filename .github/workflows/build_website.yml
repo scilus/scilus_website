@@ -42,7 +42,7 @@ jobs:
         with:
             switches: --delete -r
             legacy_allow_rsa_hostkeys: "true"
-            path: ${{ github.workspace }}/scil.usherbrooke.ca/
+            path: scil.usherbrooke.ca/
             remote_path: ${{ secrets.REMOTE_PATH }}
             remote_host: ${{ secrets.REMOTE_HOST }}
             remote_user: ${{ secrets.REMOTE_USER }}
