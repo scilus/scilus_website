@@ -35,4 +35,15 @@ jobs:
           extended: true
 
       - name: Build
-        run: hugo -D -F -b "https://scil.usherbrooke.ca" -d scil.usherbrooke.ca
+        run: hugo -D -F -b "https://scil.usherbrooke.ca" -d /scil.usherbrooke.ca/
+
+      - name: rsync deployments
+        uses: burnett01/rsync-deployments@7.0.0
+        with:
+            switches: --delete -r
+            legacy_allow_rsa_hostkeys: "true"
+            path: ${{ secret.HOST_PATH }}
+            remote_path: ${{ secret.REMOTE_PATH }}
+            remote_host: ${{ secret.REMOTE_HOST }}
+            remote_user: ${{ secret.REMOTE_USER }}
+            remote_key: ${{ secrets.DEPLOY_KEY }}
