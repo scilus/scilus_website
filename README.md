@@ -4,6 +4,7 @@ SCIL website - GitHub
 
 - Teaching
 - Tools
+- Atlases
 - Publications
 - Gallery
 - Social networks
