@@ -42,8 +42,8 @@ jobs:
         with:
             switches: --delete -r
             legacy_allow_rsa_hostkeys: "true"
-            path: ${{ secret.HOST_PATH }}
-            remote_path: ${{ secret.REMOTE_PATH }}
-            remote_host: ${{ secret.REMOTE_HOST }}
-            remote_user: ${{ secret.REMOTE_USER }}
+            path: ${{ secrets.HOST_PATH }}
+            remote_path: ${{ secrets.REMOTE_PATH }}
+            remote_host: ${{ secrets.REMOTE_HOST }}
+            remote_user: ${{ secrets.REMOTE_USER }}
             remote_key: ${{ secrets.DEPLOY_KEY }}
