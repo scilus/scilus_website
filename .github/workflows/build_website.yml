@@ -4,28 +4,43 @@ on:
   push:
     branches:
       - master
-  pull_request_target:
-    branches:
-      - master
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   deploy:
     runs-on: scil-website-runners
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Install dependancies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+          git rsync
+
+      - name: Checkout repository
+        uses: actions/checkout@v4.1.1
         with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+          submodules: ''
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.68.3'
-          # extended: true
+          hugo-version: '0.123.8'
+          extended: true
 
       - name: Build
         run: hugo -D -F -b "https://scil.usherbrooke.ca" -d scil.usherbrooke.ca
-      - name: Deploy
-        run: rsync --delete -r "$WORKSPACE/scil.usherbrooke.ca/" bora2502@scil.usherbrooke.ca:/var/www/bk_scil.usherbrooke.ca/
+
+      - name: rsync deployments
+        uses: burnett01/rsync-deployments@7.0.0
+        with:
+            switches: --delete -r
+            legacy_allow_rsa_hostkeys: "true"
+            path: scil.usherbrooke.ca/
+            remote_path: ${{ secrets.REMOTE_PATH }}
+            remote_host: ${{ secrets.REMOTE_HOST }}
+            remote_user: ${{ secrets.REMOTE_USER }}
+            remote_key: ${{ secrets.DEPLOY_KEY }}
