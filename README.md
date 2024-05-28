@@ -11,3 +11,5 @@ SCIL website - GitHub
 
 # How to build the website
 
+- Install hugo
+- Run command: hugo server
