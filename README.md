@@ -9,7 +9,7 @@ SCIL website - GitHub
 - Gallery
 - Social networks
 
-# How to build the website
+# How to build the website (debug)
 
 - Install hugo
 - Run command: hugo server
