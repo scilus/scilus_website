@@ -11,5 +11,6 @@ SCIL website - GitHub
 
 # How to build the website (debug)
 
-- Install hugo
-- Run command: hugo server
+Run the following commands:
+- sudo apt install hugo
+- hugo server
