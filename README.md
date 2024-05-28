@@ -8,3 +8,6 @@ SCIL website - GitHub
 - Publications
 - Gallery
 - Social networks
+
+# How to build the website
+
