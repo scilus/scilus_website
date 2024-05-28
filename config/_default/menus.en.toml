@@ -29,6 +29,16 @@ name = "Gallery"
 url = "gallery/"
 weight = 6
 
+[[main]]
+name = "Team"
+url = "pages/team"
+weight = 7
+
+[[main]]
+name = "Documentation"
+url = "https://scil-documentation.readthedocs.io/en/latest/"
+weight = 8
+
 # footer menu left
 # [[footer_left]]
 # name = "About Us"

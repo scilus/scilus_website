@@ -8,3 +8,9 @@ SCIL website - GitHub
 - Publications
 - Gallery
 - Social networks
+
+# How to build the website (debug)
+
+Run the following commands:
+- sudo apt install hugo
+- hugo server
