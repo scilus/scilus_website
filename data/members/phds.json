@@ -1,0 +1,18 @@
+{
+  "phd": [
+    {
+      "name": "John Phd",
+      "startYear": 1901,
+      "websiteUrl": "http://www.google.com",
+      "twitterUrl": "http://www.twitter.com",
+      "github": "antoinetheb"
+    },
+    {
+      "name": "Jane Phd",
+      "startYear": 1901,
+      "websiteUrl": "http://www.google.com",
+      "twitterUrl": "http://www.twitter.com",
+      "github": "antoinetheb"
+    }
+  ]
+}

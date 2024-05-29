@@ -1,0 +1,17 @@
+{
+  "professors": [
+    {
+      "name": "Dr. John Professor",
+      "websiteUrl": "http://www.google.com",
+      "scholarId": "qc6CJjYAAAAJ",
+      "twitterUrl": "http://www.twitter.com",
+      "github": "antoinetheb"
+    },
+    {
+      "name": "Dr. Jane Professor",
+      "websiteUrl": "http://www.google.com",
+      "twitterUrl": "http://www.twitter.com",
+      "github": "antoinetheb"
+    }
+  ]
+}

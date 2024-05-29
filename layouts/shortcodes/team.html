@@ -1,0 +1,39 @@
+<h1> Professors </h1>
+
+<table>
+{{ range index site.Data.members.professors "professors" }}
+  {{ partial "member.html" . }}
+{{ end }}
+</table>
+
+<h1> Research assistants </h1>
+
+<table>
+{{ range index site.Data.members.ra "RA" }}
+  {{ partial "member.html" . }}
+{{ end }}
+</table>
+
+<h1> PhDs </h1>
+
+<table>
+{{ range index site.Data.members.phds "phd" }}
+  {{ partial "member.html" . }}
+{{ end }}
+</table>
+
+<h1> Masters </h1>
+
+<table>
+{{ range index site.Data.members.masters "masters" }}
+  {{ partial "member.html" . }}
+{{ end }}
+</table>
+
+<h1> Past members </h1>
+
+<table>
+{{ range index site.Data.members.former "former" }}
+  {{ partial "member.html" . }}
+{{ end }}
+</table>
