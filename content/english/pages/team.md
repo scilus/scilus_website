@@ -8,17 +8,4 @@ description: ""
 draft: false
 ---
 
-<style>
-table {
-    border-collapse: collapse;
-}
-table, th, td {
-   border: none!important;
-}
-blockquote {
-    border-left: solid blue;
-    padding-left: 10px;
-}
-</style>
-
 {{< team >}}
