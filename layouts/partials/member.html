@@ -1,5 +1,5 @@
 <tr>
-  <td style="width:80%"><b>{{ .name }}</b> {{ if .title }} ({{ .title}}) {{end}} <br /> <br />
+  <td style="width:80%"><b>{{ .name }}</b> {{ if .title }} ({{ .title}}) {{end}} <br />
   {{ if .scholarId}} <a href="https://scholar.google.com/citations?user={{.scholarId}}"><i class="fa fa-book-open"></i></a>  {{ end }} 
   {{ if .websiteUrl}} <a href="{{.websiteUrl}}"><i class="fa fa-id-badge"></i></a>  {{ end }} 
   <a href="https://github.com/{{.githubId}}"><i class="fab fa-github"></i></a>
