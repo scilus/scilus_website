@@ -25,10 +25,13 @@
     {
       "name": "Philippe Karan",
       "websiteUrl": "",
-      "scholarId": "",
+      "scholarId": "WLMs7IMAAAAJ&hl",
       "twitterId": "",
-      "linkedinId": "",
-      "githubId": ""
+      "linkedinId": "philippe-karan",
+      "githubId": "karanphil",
+      "mscStartYear": 2019,
+      "mscEndYear": 2021,
+      "phdStartYear": 2021
     },
     {
       "name": "Stanislas Thoumyre",
@@ -48,18 +51,19 @@
       "phdStartYear": 2023
     },
     {
-      "name": "Erick ",
+      "name": "Erick Hernandez Gutierrez",
       "websiteUrl": "",
       "scholarId": "",
       "twitterId": "",
       "linkedinId": "",
-      "githubId": ""
+      "githubId": "ErickHernandezGutierrez",
+      "phdStartYear": 2019
     },
     {
       "name": "Antoine Royer",
       "linkedinId": "antoine-royer-079b651a4",
       "githubId": "anroy1",
-      "startYear": 2023
+      "phdStartYear": 2023
     },
     {
       "name": "Charles Poirier",

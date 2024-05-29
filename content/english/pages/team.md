@@ -10,6 +10,8 @@ draft: false
 
 {{< team >}}
 
+### Student
+
 - Etienne Saint-Amant (master: 2011)
 - Michaël Bernier (master: 2012)
 - Arnaud Boré (master: 2012)
@@ -32,7 +34,7 @@ draft: false
 - Jon Haitz Legarreta Gorrono (PhD: 2023)
 - Sami Obaid
 
-## Co-direction
+### Co-direction
 
 - Vincent Méthot (master: 2016)
 - Marc-Alexandre Côté (master: 2012, PhD: 2017)
@@ -41,6 +43,6 @@ draft: false
 - Jérémie Fouquet ( )
 - Martin Cousineau (master: 2017)
 
-## Research assistant
+### Research assistant
 
 - Jean-Christophe Houde
