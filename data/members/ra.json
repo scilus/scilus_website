@@ -1,16 +1,25 @@
 {
   "RA": [
     {
-      "name": "John RA",
-      "websiteUrl": "http://www.google.com",
-      "twitterUrl": "http://www.twitter.com",
-      "github": "antoinetheb"
+      "name": "Arnaud Boré",
+      "githubId": "arnaudbore",
+      "scholarId": "yuYgGGQAAAAJ&hl",
+      "linkedinId": "arnaud-boré-22a26a1b"
     },
     {
-      "name": "Jane RA",
-      "websiteUrl": "http://www.google.com",
-      "twitterUrl": "http://www.twitter.com",
-      "github": "antoinetheb"
+      "name": "Gabriel Girard",
+      "twitterId": "GabrielPGirard",
+      "githubId": "gabknight",
+      "scholarId": "-Zoh5mIAAAAJ",
+      "linkedinId": "gabrielgirard"
+    },
+    {
+      "name": "Manon Edde",
+      "websiteUrl": "",
+      "twitterId": "manonedde",
+      "githubId": "manonedde",
+      "scholarId": "Q_C7kL8AAAAJ",
+      "linkedinId": "manon-edde-5b1539b3"
     }
   ]
 }

@@ -1,17 +1,20 @@
 {
   "professors": [
     {
-      "name": "Dr. John Professor",
-      "websiteUrl": "http://www.google.com",
-      "scholarId": "qc6CJjYAAAAJ",
-      "twitterUrl": "http://www.twitter.com",
-      "github": "antoinetheb"
+      "name": "Dr. Maxime Descoteaux",
+      "websiteUrl": "https://scil.usherbrooke.ca/pages/mdescoteaux",
+      "scholarId": "ohzG9ScAAAAJ&hl",
+      "twitterId": "maxdescoteaux",
+      "linkedinId": "",
+      "githubId": "mdesco"
     },
     {
-      "name": "Dr. Jane Professor",
-      "websiteUrl": "http://www.google.com",
-      "twitterUrl": "http://www.twitter.com",
-      "github": "antoinetheb"
+      "name": "Dr. François Rheault",
+      "websiteUrl": "",
+      "scholarId": "",
+      "twitterId": "",
+      "linkedinId": "",
+      "githubId": "frheault"
     }
   ]
 }

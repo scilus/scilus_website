@@ -1,18 +1,10 @@
 {
   "masters": [
     {
-      "name": "John Masters",
-      "startYear": 1901,
-      "websiteUrl": "http://www.google.com",
-      "twitterUrl": "http://www.twitter.com",
-      "github": "antoinetheb"
-    },
-    {
-      "name": "Jane Masters",
-      "startYear": 1901,
-      "websiteUrl": "http://www.google.com",
-      "twitterUrl": "http://www.twitter.com",
-      "github": "antoinetheb"
+      "name": "Zineb El Yamani",
+      "linkedinId": "zineb-el-yamani-1a54491ba",
+      "githubId": "elyz081",
+      "mscStartYear" : 2024
     }
   ]
 }
