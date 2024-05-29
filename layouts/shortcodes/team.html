@@ -10,7 +10,7 @@ table, th, td {
 <h1> Professors </h1>
 
 <table>
-{{ range index site.Data.members.professors "professors" }}
+{{ range index site.Data.members.professors "professors"}}
   {{ partial "member.html" . }}
 {{ end }}
 </table>
@@ -18,7 +18,15 @@ table, th, td {
 <h1> Research assistants </h1>
 
 <table>
-{{ range index site.Data.members.ra "RA" }}
+{{ range sort (index site.Data.members.ra "RA") ".name" }}
+  {{ partial "member.html" . }}
+{{ end }}
+</table>
+
+<h1> PostDoc </h1>
+
+<table>
+{{ range sort (index site.Data.members.postdoc "postdoc") ".name" }}
   {{ partial "member.html" . }}
 {{ end }}
 </table>
@@ -26,7 +34,7 @@ table, th, td {
 <h1> PhDs </h1>
 
 <table>
-{{ range index site.Data.members.phds "phd" }}
+{{ range sort (index site.Data.members.phds "phd") ".name" }}
   {{ partial "member.html" . }}
 {{ end }}
 </table>
@@ -34,15 +42,11 @@ table, th, td {
 <h1> Masters </h1>
 
 <table>
-{{ range index site.Data.members.masters "masters" }}
+{{ range sort (index site.Data.members.masters "masters") ".name" }}
   {{ partial "member.html" . }}
 {{ end }}
 </table>
+
+<hr>
 
 <h1> Past members </h1>
-
-<table>
-{{ range index site.Data.members.former "former" }}
-  {{ partial "member.html" . }}
-{{ end }}
-</table>
