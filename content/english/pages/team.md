@@ -20,7 +20,6 @@ draft: false
 - Alexandre Gauvin (master: 2016)
 - Louis-Philippe Ledoux (master: 2017)
 - Gabriel Girard (master: 2013, PhD: 2016)
-- Marc-Alexandre Côté (PhD: 2017)
 - Maxime Chamberland (master: 2013, PhD: 2017)
 - Michaël Paquette (PhD: 2017)
 - François Rheault (PhD: 2020)
