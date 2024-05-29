@@ -1,0 +1,13 @@
+<tr>
+  <td style="width:80%"><b>{{ .name }}</b> {{ if .title }} ({{ .title}}) {{end}} <br />
+  <a href="https://scholar.google.com/citations?user={{.scholarId}}"><i class="fa fa-book-open"></i></a>
+  <a href="{{.websiteUrl}}"><i class="fa fa-id-badge"></i></a>
+  <a href="https://github.com/{{.github}}"><i class="fab fa-github"></i></a>
+  <a href="{{.twitterUrl}}"><i class="fab fa-twitter"></i></a> <br />
+  {{ if .startYear}} {{.startYear}}- {{ end }}
+  {{ if .endYear}} {{.endYear}} {{ end }}
+  </td>
+  <td>
+    <img src="https://github.com/{{.github}}.png" style="border-radius:50%;width:100px;height:100px;object-position: center;"></img>
+  </td>
+</tr>
