@@ -10,7 +10,7 @@ draft: false
 
 {{< team >}}
 
-### Student
+### Students
 
 - Etienne Saint-Amant (master: 2011)
 - Michaël Bernier (master: 2012)
@@ -40,7 +40,6 @@ draft: false
 - Marc-Alexandre Côté (master: 2012, PhD: 2017)
 - Alexandre Bizeau (master: 2017)
 - Matteo Batocchio (PhD: 2022)
-- Jérémie Fouquet ( )
 - Martin Cousineau (master: 2017)
 
 ### Research assistant
