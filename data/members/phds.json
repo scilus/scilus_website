@@ -19,8 +19,8 @@
       "linkedinId": "emmanuelle-renauld",
       "githubId": "EmmaRenauld",
       "phdStartYear": 2019,
-      "mscStartYear": 2015,
-      "mscEndYear": 2012
+      "mscStartYear": 2012,
+      "mscEndYear": 2015
     },
     {
       "name": "Philippe Karan",
@@ -58,12 +58,6 @@
       "linkedinId": "",
       "githubId": "ErickHernandezGutierrez",
       "phdStartYear": 2019
-    },
-    {
-      "name": "Antoine Royer",
-      "linkedinId": "antoine-royer-079b651a4",
-      "githubId": "anroy1",
-      "phdStartYear": 2023
     },
     {
       "name": "Charles Poirier",
