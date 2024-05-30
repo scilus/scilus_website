@@ -2,59 +2,92 @@
 <style>
 
 table, th, td {
-   border: none!important;
+  border: none!important;
 }
 
 tr
 {
-     border-bottom: 0.5px solid rgba(0,0,0,0.1);
+  border-bottom: 0.5px solid rgba(0,0,0,0.1);
 }
-tr:last-child
-  {
-       border-bottom: none;
-  }
+      tr:last-child
+        {
+          border-bottom: none;
+        }
+
+.section {
+  padding: 0px 0;
+}
+
+.feature-card {
+  box-shadow: 0 12px 24px -6px rgba(45,67,121,.1)!important
+}
 
 </style>
 
-<h1> Professors </h1>
+<section class="section">
+  <div class="container">
+    <div class="row ">
+      <div class="col-12 text-center">
+        <h2 class="section-title">Professors</h2>
+      </div>
+      {{ range index site.Data.members.professors "professors"}}
+      {{ partial "member.html" . }}
+      {{ end }}
+    </div>
+  </div>
+</section>
 
-<table>
-{{ range index site.Data.members.professors "professors"}}
-  {{ partial "member.html" . }}
-{{ end }}
-</table>
+<section class="section">
+  <div class="container">
+    <div class="row ">
+      <div class="col-12 text-center">
+        <h2 class="section-title">Research assistants</h2>
+      </div>
+      {{ range sort (index site.Data.members.ra "RA") ".name" }}
+      {{ partial "member.html" . }}
+      {{ end }}
+    </div>
+  </div>
+</section>
 
-<h1> Research assistants </h1>
+<section class="section">
+  <div class="container">
+    <div class="row ">
+      <div class="col-12 text-center">
+        <h2 class="section-title">Postdocs</h2>
+      </div>
+      {{ range sort (index site.Data.members.postdoc "postdoc") ".name" }}
+      {{ partial "member.html" . }}
+      {{ end }}
+    </div>
+  </div>
+</section>
 
-<table>
-{{ range sort (index site.Data.members.ra "RA") ".name" }}
-  {{ partial "member.html" . }}
-{{ end }}
-</table>
+<section class="section">
+  <div class="container">
+    <div class="row ">
+      <div class="col-12 text-center">
+        <h2 class="section-title">PhDs</h2>
+      </div>
+      {{ range sort (index site.Data.members.phds "phd") ".name" }}
+      {{ partial "member.html" . }}
+      {{ end }}
+    </div>
+  </div>
+</section>
 
-<h1> PostDoc </h1>
-
-<table>
-{{ range sort (index site.Data.members.postdoc "postdoc") ".name" }}
-  {{ partial "member.html" . }}
-{{ end }}
-</table>
-
-<h1> PhDs </h1>
-
-<table>
-{{ range sort (index site.Data.members.phds "phd") ".name" }}
-  {{ partial "member.html" . }}
-{{ end }}
-</table>
-
-<h1> Masters </h1>
-
-<table>
-{{ range sort (index site.Data.members.masters "masters") ".name" }}
-  {{ partial "member.html" . }}
-{{ end }}
-</table>
+<section class="section">
+  <div class="container">
+    <div class="row ">
+      <div class="col-12 text-center">
+        <h2 class="section-title">Masters</h2>
+      </div>
+      {{ range sort (index site.Data.members.masters "masters") ".name" }}
+      {{ partial "member.html" . }}
+      {{ end }}
+    </div>
+  </div>
+</section>
 
 <hr>
 

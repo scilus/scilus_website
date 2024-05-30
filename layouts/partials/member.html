@@ -1,14 +1,15 @@
-<tr>
-  <td style="width:80%"><b>{{ .name }}</b> {{ if .title }} ({{ .title}}) {{end}} <br />
-  {{ if .scholarId}} <a href="https://scholar.google.com/citations?user={{.scholarId}}"><i class="fa fa-book-open"></i></a>  {{ end }} 
-  {{ if .websiteUrl}} <a href="{{.websiteUrl}}"><i class="fa fa-id-badge"></i></a>  {{ end }} 
-  <a href="https://github.com/{{.githubId}}"><i class="fab fa-github"></i></a>
-  {{ if .twitterId}} <a href="https://x.com/{{.twitterId}}"><i class="fab fa-twitter"></i></a>  {{ end }} 
-  {{ if .linkedinId}} <a href="https://www.linkedin.com/in/{{.linkedinId}}"><i class="fab fa-linkedin"></i></a> {{ end }} <br />
-  {{ if .mscStartYear}} Master: {{.mscStartYear}} - {{.mscEndYear}} <br /> {{ end }} 
-  {{ if .phdStartYear}} PhD: {{.phdStartYear}} - {{.phdEndYear}} {{ end }}
-  </td>
-  <td>
-    <img src="https://github.com/{{.githubId}}.png" style="border-radius:50%;width:100px;height:100px;object-position:center;"></img>
-  </td>
-</tr>
+<div class="col-md-4 col-sm-6 mb-4">
+  <div class="feature-card text-center" style="min-height:310px;">
+    <img src="https://github.com/{{.githubId}}.png" style="border-radius:50%;width:100px;height:100px;object-position:center;"></img><br />
+    <b>{{ .name }}</b> {{ if .title }} ({{ .title}}) {{end}} <br />
+    {{ if .mscStartYear}} Master: {{.mscStartYear}} - {{.mscEndYear}} <br /> {{ end }} 
+    {{ if .phdStartYear}} PhD: {{.phdStartYear}} - {{.phdEndYear}} <br /> {{ end }}
+    <hr>
+    {{ if .scholarId}} <a href="https://scholar.google.com/citations?user={{.scholarId}}"><i class="fa fa-book-open"></i></a>  {{ end }} 
+    {{ if .websiteUrl}} <a href="{{.websiteUrl}}"><i class="fa fa-id-badge"></i></a>  {{ end }} 
+    <a href="https://github.com/{{.githubId}}"><i class="fab fa-github"></i></a>
+    {{ if .twitterId}} <a href="https://x.com/{{.twitterId}}"><i class="fab fa-twitter"></i></a>  {{ end }} 
+    {{ if .linkedinId}} <a href="https://www.linkedin.com/in/{{.linkedinId}}"><i class="fab fa-linkedin"></i></a> {{ end }} <br />
+
+  </div>
+</div>
