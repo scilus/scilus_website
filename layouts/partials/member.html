@@ -4,6 +4,7 @@
     <b>{{ .name }}</b> {{ if .title }} ({{ .title}}) {{end}} <br />
     {{ if .mscStartYear}} Master: {{.mscStartYear}} - {{.mscEndYear}} <br /> {{ end }} 
     {{ if .phdStartYear}} PhD: {{.phdStartYear}} - {{.phdEndYear}} <br /> {{ end }}
+    {{ if .postdocStartYear}} PostDoc: {{.postdocStartYear}} - {{.postdocEndYear}} <br /> {{ end }}
     <hr>
     {{ if .scholarId}} <a href="https://scholar.google.com/citations?user={{.scholarId}}"><i class="fa fa-book-open"></i></a>  {{ end }} 
     {{ if .websiteUrl}} <a href="{{.websiteUrl}}"><i class="fa fa-id-badge"></i></a>  {{ end }} 
