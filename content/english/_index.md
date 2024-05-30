@@ -11,7 +11,7 @@ banner:
 
 ##################### Feature ##########################
 feature:
-  enable : false
+  enable : false 
   title : "Something You Need To Know"
   feature_item:
     # feature item loop
