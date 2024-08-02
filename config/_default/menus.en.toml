@@ -15,14 +15,29 @@ url = "tools/"
 weight = 3
 
 [[main]]
+name = "Atlases"
+url = "atlases/"
+weight = 4
+
+[[main]]
 name = "Publications"
 url = "pages/publications"
-weight = 4
+weight = 5
 
 [[main]]
 name = "Gallery"
 url = "gallery/"
-weight = 5
+weight = 6
+
+[[main]]
+name = "Team"
+url = "pages/team"
+weight = 7
+
+[[main]]
+name = "Documentation"
+url = "https://scil-documentation.readthedocs.io/en/latest/"
+weight = 8
 
 # footer menu left
 # [[footer_left]]

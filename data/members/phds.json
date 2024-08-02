@@ -1,0 +1,71 @@
+{
+  "phd": [
+    {
+      "name": "Antoine Théberge",
+      "websiteUrl": "https://www.antoinetheberge.ca/",
+      "scholarId": "m5GXCssAAAAJ",
+      "twitterId": "antoinetheb",
+      "linkedinId": "antoine-théberge-3a2509b3",
+      "githubId": "antoinetheb",
+      "phdStartYear": 2021
+    },
+    {
+      "name": "Emmanuelle Renauld",
+      "websiteUrl": "https://sites.google.com/site/renauldemmanuelle/home",
+      "scholarId": "",
+      "twitterId": "",
+      "linkedinId": "emmanuelle-renauld",
+      "githubId": "EmmaRenauld",
+      "phdStartYear": 2019
+    },
+    {
+      "name": "Philippe Karan",
+      "websiteUrl": "",
+      "scholarId": "WLMs7IMAAAAJ",
+      "twitterId": "",
+      "linkedinId": "philippe-karan",
+      "githubId": "karanphil",
+      "phdStartYear": 2021
+    },
+    {
+      "name": "Stanislas Thoumyre",
+      "linkedinId": "stanislas-thoumyre",
+      "githubId": "ThoumyreStanislas",
+      "phdStartYear": 2023
+    },
+    {
+      "name": "Anthony Gagnon",
+      "websiteUrl": "",
+      "scholarId": "gCJ7l3wAAAAJ",
+      "twitterId": "antogagnon33",
+      "linkedinId": "anthony-gagnon-847338170",
+      "githubId": "gagnonanthony",
+      "phdStartYear": 2023
+    },
+    {
+      "name": "Erick Hernandez Gutierrez",
+      "websiteUrl": "",
+      "scholarId": "",
+      "twitterId": "",
+      "linkedinId": "",
+      "githubId": "ErickHernandezGutierrez",
+      "phdStartYear": 2020
+    },
+    {
+      "name": "Charles Poirier",
+      "scholarId": "InSHWFUAAAAJ",
+      "twitterId": "CHrlS_98",
+      "githubId": "CHrlS98",
+      "phdStartYear": 2023
+    },
+    {
+      "name": "Alex Valcourt Caron",
+      "websiteUrl": "alexvcaron.github.io",
+      "scholarId": "H2QOv4sAAAAJ",
+      "twitterId": "AlexVCaron",
+      "linkedinId": "alex-valcourt-caron-545bb72b7",
+      "githubId": "AlexVCaron",
+      "phdStartYear": 2022
+    }
+  ]
+}

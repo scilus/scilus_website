@@ -1,0 +1,46 @@
+name: scilus_website build
+
+on:
+  push:
+    branches:
+      - master
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: scil-website-runners
+
+    steps:
+      - name: Install dependancies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+          git rsync
+
+      - name: Checkout repository
+        uses: actions/checkout@v4.1.1
+        with:
+          submodules: ''
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.123.8'
+          extended: true
+
+      - name: Build
+        run: hugo -D -F -b "https://scil.usherbrooke.ca" -d scil.usherbrooke.ca
+
+      - name: rsync deployments
+        uses: burnett01/rsync-deployments@7.0.0
+        with:
+            switches: --delete -r
+            legacy_allow_rsa_hostkeys: "true"
+            path: scil.usherbrooke.ca/
+            remote_path: ${{ secrets.REMOTE_PATH }}
+            remote_host: ${{ secrets.REMOTE_HOST }}
+            remote_user: ${{ secrets.REMOTE_USER }}
+            remote_key: ${{ secrets.DEPLOY_KEY }}
