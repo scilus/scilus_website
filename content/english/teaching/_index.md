@@ -7,11 +7,11 @@ draft: false
 
 basic:
   name : "IMN359"
-  #price: "A2022"
+  #price: "A2024"
   # price_per : "month"
   info : "**Outils mathématiques du traitement d’images**"
   services:
-   - "Automne 2022"
+   - "Automne 2024"
   button:
     enable : true
     label : "Notes et support de cours"
@@ -35,15 +35,16 @@ basic:
 
 business:
   name : "IMN530/IMN708"
-#  price: "A2022"
+#  price: "A2024"
   # price_per : "month"
   info : "**Reconstruction et analyse d’images médicales**"
   services:
-  - "Automne 2022"
+  - "Automne 2024"
   button:
     enable : true
-    label : "Lien vers le cours"
-    link : "https://sites.google.com/site/renauldemmanuelle/enseignement-imn530"
+    label : "Notes et support de cours"
+    link : "courses/imn530"
+# "https://sites.google.com/site/renauldemmanuelle/enseignement-imn530"
 
 
 call_to_action:
