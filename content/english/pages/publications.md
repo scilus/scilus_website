@@ -8,7 +8,7 @@ description: ""
 draft: false
 ---
 
-## [Papers](https://pubmed.ncbi.nlm.nih.gov/?term=%22Descoteaux%20M.%22&sort=date)
+## Papers
 
 PubMed list [link](https://pubmed.ncbi.nlm.nih.gov/?term=%22Descoteaux%20M.%22&sort=date) of papers published by Professor Maxime Descoteaux, Ph.D and the SCIL. And Google Scholar [link](https://scholar.google.com/citations?hl=en&user=ohzG9ScAAAAJ).
 
