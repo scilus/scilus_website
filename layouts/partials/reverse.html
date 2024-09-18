@@ -1,0 +1,10 @@
+{{- $reversed := slice -}}
+{{- range $index, $file := . -}}
+    {{- $reversed = $reversed | append $file -}}
+{{- end -}}
+{{- $reversedLength := len $reversed -}}
+{{- $reversedFinal := slice -}}
+{{- range $i := seq 0 (sub $reversedLength 1) -}}
+    {{- $reversedFinal = $reversedFinal | append (index $reversed (sub (sub $reversedLength $i) 1)) -}}
+{{- end -}}
+{{- $reversedFinal -}}
