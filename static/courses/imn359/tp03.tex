@@ -1,0 +1,290 @@
+
+\documentclass{article}
+
+%%%% Largeur et tailles des marges
+\oddsidemargin 0in
+\evensidemargin 0in
+\textwidth 6.5in
+
+
+%%% Pour avoir les accents %%%%%%%%%%%%%%%%%
+\usepackage[latin1]{inputenc}
+\usepackage[francais]{babel}
+\usepackage{color,graphicx,float,epsfig,amssymb}
+%%%%%%%%%%
+
+
+%%%%%%%%%%%%% Document %%%%%%%%%%%%%%%%%%%%%
+\title{TP3 - IMN359 - Transformée de Fourier Discrète, \\Convolution \&
+  Échantillonnage} 
+\author{Maxime Descoteaux}
+\date{\today}
+\begin{document}
+\maketitle
+
+Vous devez rédiger un rapport avec les solutions
+% en \emph{Latex}
+et me remettre un zip avec votre code Python. 
+Commentez le code et assurez-vous que je puisse reproduire vos 
+résultats et figures. 
+Séparez votre code en différents fichiers pour faciliter la
+lecture. Des points seront attribués pour la qualité du document
+% latex
+et ses figures (5 points), et la qualité du code Python (5 points). 
+
+{\bf La date de remise sera déterminée en classe.}
+% Exercice 1.
+% g0(n) = [0.5 1 1 0.5].
+% 1. Calculer G0(k) = TFD[g0(n)] pour N = 4.
+% 2. De G0(k), calculer g(n) = TFDI[G0(k)].
+% 3. Calculer G1(k) = TFD[g0(n)] pour N = 8.
+% 4. De G1(k), calculer g1(n) = TFDI[G1(k)] pour N = 8.
+% 5. De G1(k), calculer g1(n) = TFDI[G1(k)] pour N = 4.
+\vspace{-1cm}
+\section*{}
+\begin{enumerate}
+% \item  {\bf Transformée de Fourier Discrète (TFD) simple et à la
+%     main. Ne faites pas ça en latex. Rendez-moi votre solution papier
+%     ou scannez-la.} 
+
+% Soit la matrice a:
+% $$
+% a = \left [
+% \begin{array}{cccc}
+% 10  &   9  &   8  & 9 \\
+% 2   &  8   &  4   & 7 \\
+% 6   &  5   &  6   & 2 \\
+% 5   &  0   &  8   &  4
+% \end{array}
+% \right ]
+% $$
+
+% \begin{enumerate}
+% \item Calculer ac, la TFD de chacune des colonnes de a. Combien
+%   d'opérations avez-vous faites?
+   
+% \item Calculer al, la TFD de chacune des lignes de a. Combien
+%   d'opérations avez-vous faites? 
+  
+% \item Calculer acl, la TFD de chacune des lignes de ac trouvée en 1. 
+  
+% \item Calculer la TFD rapide, à la main, de a selon les
+%   colonnes. Combien
+%   d'opérations avez-vous faites?
+%   Vérifier votre résultat avec la commande
+%   \emph{fft} de Matlab, soit af1$=$fft(a).   
+	  
+% \item Calculer la TFD rapide, à la main, de a selon les
+%   lignes. Combien
+%   d'opérations avez-vous faits? 
+%   Vérifier en Matlab, soit af2$=$fft(a'), où a' est la
+%   transposée de a. 
+
+% \item Calculer la FFT 2D de a selon af=fft2(a).
+
+% \item Pour calculer la FFT 1D des colonnes puis des lignes, faire
+%   af12$=$fft(fft(a)')'. Comparer af12 et af (faire af12-af). Que remarquez-vous?
+
+% \item Comparer af1 et af2 à ac et al. Que remarquez-vous?
+
+% \item  Comparer acl et af.  Que remarquez-vous?
+
+% \item Finalement, comparez le nombre d'opérations faits pour la TDF
+%   versus la FFT.
+% \end{enumerate}
+
+% \vspace{1cm}
+% \newpage
+
+\item {\bf TFD et Convolution [20 pts]}
+
+  
+  La transformée de Fourier de la Gaussienne $g(t) =
+  \exp(-t^2/(2\sigma^2))$ est aussi une Gaussienne
+  $G(f) = \sqrt{2\sigma^2\pi}\exp(-2\pi^2 \sigma^2 f^2)$.
+  (https://mathworld.wolfram.com/FourierTransformGaussian.html)
+  
+  \begin{enumerate}  
+  \vspace{0.5cm}  
+  \item En Python, construiser
+    et illustrer la Gaussienne 1D et sa TF de la partie (a), utilisant
+    un $\sigma = 6$ et 1024 points discrets de temps $t$. 
+  
+\vspace{0.5cm}  
+  \item En utilisant la \emph{fft} de Python, calculer et illustrer sa
+    transformée de Fourier $G(f)$. \\
+    Visualiser le résultat et assurez-vous que le résultat théorique en b)
+    correspond à votre résultat trouvé numériquement.
+
+\vspace{0.5cm}  
+  \item Charger le signal 1D 'piece-regular'
+    (piece-regular.mat). En utilisant la fonction \emph{rand},
+    ajouter-y  un bruit additif avec un 
+    écart type de votre choix (piece-regular + $\tau
+    \cdot$rand(1024,1)). Si $\tau=0.1$, vous ajoutez 10\% de bruit. 
+    Illustrer le signal et sa version bruité en faisant un subplot.
+
+\vspace{0.5cm}  
+  \item Illustrer de façon pratique le théorème de convolution. $(f *
+  g)(t) = \mathcal{TF}^{-1}(F(w) G(w))$.
+
+  \begin{enumerate}
+    \item D'abord, calculer la convolution du signal bruité et du
+      filtre Gaussien. Illustrer le résultat.
+      
+    \item Ensuite, faites la multiplication des transformées de
+      Fourier respectives dans l'espace de Fourier et calculer la
+      transformée de Fourier inverse. Illustrer le
+      résultat.
+      
+    \item Que remarquez-vous?
+
+    \item Montrer que le théorème de Plancherel est respecté
+    (conservation d'énergie).
+  \end{enumerate}
+\end{enumerate}
+
+\begin{figure}[!t]
+  \begin{center}
+    \begin{tabular}{cc}   % table avec 2 colonnes
+      \includegraphics[width=9cm]{piece-regular} &
+      \includegraphics[width=6cm]{lena} \\
+      Signal 1D 'piece-regular' & Image de Lena 
+    \end{tabular}
+    \caption{\label{fig:images} Image et signal classiques utilisés en
+    imagerie.} 
+  \end{center}
+\end{figure}
+
+
+\newpage
+\item {\bf TFD 2D [20 pts]} 
+\begin{enumerate}
+\item Construiser un filtre cosinusoidal 1D avec un support de
+  $[-\pi, \pi]$. Illustrer-le.  \\
+  (Indice: Votre filtre devrait ressembler à
+  une fonction porte centrée à l'origine avec des transitions moins
+  abrutes à cause du cosinus tel qu'illustré en Figure~\ref{fig:sin_filtre}) 
+ \vspace{0.5cm}
+
+\begin{figure}[!t]
+  \begin{center}
+    \includegraphics[width=9cm]{Sinusoidal.jpg} 
+    \caption{\label{fig:sin_filtre} 
+      Exemple d'un filtre cosinusoidal sur l'intervalle $[-\pi, \pi]$.}  
+  \end{center}
+\end{figure}
+
+  \item Généraliser ce filtre en 2D. Illustrer-le. (Explorer la
+  fonction \emph{mesh} de Python pour l'illustrer.) 
+
+ \vspace{0.5cm}
+  \item Charger l'image de Lena (lena.mat) et calculer sa transformée Fourier
+  2D (\emph{fft2}). Illustrer Lena et l'image du spectre dans l'espace de Fourier
+  sur une échelle logarithmique. (Faites un subplot) Que remarquez
+  vous dans le contenu fréquentiel de Lena? 
+
+ \vspace{0.5cm}
+
+  \item En traitement d'image, pour estimer le vrai contenu
+  fréquentiel d'une image et non pas ses artéfactes, on
+  \emph{multiplie} 
+  souvent l'image par une fonction de fenêtrage. Utiliser le filtre
+  cosinusoidal créé en b) à cette fin.  
+  Masquer Lena par la fonction de fenêtrage cosinusoidal (une simple
+  multiplication dans le domaine image) et
+  recalculer la transformée de Fourier sur l'image de Lena
+  fenêtrée. Illustrer le résultat de fenêtrage et sa transformée de
+  Fourier (toujours sur une échelle log). Que remarquez-vous? 
+
+ \vspace{0.5cm}
+
+\item Directement dans l'espace de Fourier, appliquer un filtre
+  passe-bas sur le spectre de Lena.  Votre filtre passe-pas devrait
+  garder seulement  les basses fréquences dans un carré 
+  autour de l'origine du spectre. Définisser votre filtre de telle
+  sorte qu'il garde seulement $M$ fréquences basses ($\sqrt{M}$
+  fréquences en $x$
+  et $\sqrt{M}$ fréquences en $y$).
+  Illustrer l'image du spectre filtré pour 3 valeurs de $M$. Faites un
+  subplot.\\
+  (Conseil: Faites cette partie proprement. Vous en aurez besoin dans
+  le TP4)
+
+ \vspace{0.5cm}
+  \item Reconstruire l'image de Lena à partir des 3 spectres
+  filtrés. Illustrer les résultats sur un subplot. Rapporter l'erreur
+  quadratique moyenne de chaque image 
+  reconstruite et le pourcentage 
+  de points utilisés pour ces reconstructions. Que
+  remarquez-vous?  
+\end{enumerate}
+
+\vspace{1cm}
+\item {\bf Échantillonnage et TFD [20 pts]} \\
+  IRM.mat contient le contenu fréquentiel d'un cerveau de chat
+  \emph{ex-vivo} passé en imagerie par
+  résonance magnétique sur l'IRM 7 Tesla du Centre
+  d'Imagerie Moléculaire de Sherbrooke. C'est vraiment ce qui sort de
+  l'acquistion IRM (k-space dans le jargon IRM) avant que le module de
+  reconstruction de l'imageur 
+  produise l'image en faisant la iFFT (transformée de Fourier
+  inverse). 
+\vspace{0.5cm}
+\begin{enumerate}
+  \item À partir de l'image k-space, mettez une ligne sur
+  $N$ ($N = 2,\, 3,\, 4$) à zéro.  C'est-à-dire, remplacer par des zéros une
+  ligne sur $N$ du k-space. C'est comme si vous aviez échantillonné ou
+  mesuré le signal IRM avec une ligne sur $N$ en moins.\\
+  Illustrez les images reconstruites en faisant la iFFT de l'image du k-space
+  et rapporter le pourcentage de points utilisés dans le titre de la figure. 
+  Que remarquez-vous? 
+\vspace{0.5cm}
+  \item À partir de l'image k-space, faites la même chose sur les
+    colonnes et illustrez la reconstruction en rapportant 
+    le pourcentage de points utilisez. Que
+    remarquez-vous? 
+\vspace{0.5cm}
+  \item Ajouter des zéros à l'image de k-space pour qu'elle soit de
+  taille, 600x600, 850x850, 1024x1024. Illustrez vos
+  reconstructions. Que remarquez-vous? Cette technique s'appelle le
+  \emph{zero padding}. D'après vous, le zero padding donne une image
+  super-résolution?\\
+  {\bf Bonus}: Analyser mathétiquement ce qui se passe en faisant du
+  zero padding. 
+\vspace{0.5cm}
+  \item Maintenant, faites un échantillonnage radial de l'image de
+  k-space. C'est-à-dire, tracez des droites traversant l'origine
+  à chaque angle $\theta$ (voir la Figure 2). Faites-le pour 3
+  $\theta$ différents, illustrez les reconstructions en rapportant
+  le pourcentage de points utilisez. Que remarquez-vous?
+\vspace{0.5cm}
+  \item Enfin, faites une échantillonnage aléatoire de l'image de
+  k-space en gardant un certain pourcentage $P$ des points du
+  k-space. Faites-le pour 3 $P$ différents,   illustrez les
+  reconstructions en rapportant le pourcentage de points utilisez. Que
+  remarquez-vous? 
+
+\end{enumerate}
+
+\end{enumerate}
+
+\begin{figure}[!b]
+  \begin{center}
+    \begin{tabular}{cc}   % table avec 2 colonnes
+      \includegraphics[width=5cm]{ligne} &
+      \includegraphics[width=5cm]{colonne} \\
+      50\% des points (1 ligne sur 2) & 67\% des points (1 ligne sur
+      3 éliminée) \\
+      \includegraphics[width=5cm]{rayon} &
+      \includegraphics[width=5cm]{random} \\      
+      30\% des points (18 rayons) &  40\% des points
+    \end{tabular}
+    \caption{\label{fig:sampling} Échantillonnage du k-space.} 
+  \end{center}
+\end{figure}
+
+
+
+\end{document}
+
