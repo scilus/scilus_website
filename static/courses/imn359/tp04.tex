@@ -1,0 +1,259 @@
+\documentclass{article}
+%%%%%%%%%%%%% Definitions %%%%%%%%%%%%%%%%%%
+
+%%%% Largeur et tailles des marges
+\oddsidemargin 0in
+\evensidemargin 0in
+\textwidth 6.5in
+
+%%%%% Pour les figures, graphiques et math (amssymb)
+\usepackage{color,graphicx,float,epsfig,amssymb}
+
+%%% Pour avoir les accents %%%%%%%%%%%%%%%%%
+\usepackage[latin1]{inputenc}
+\usepackage[cyr]{aeguill}
+\usepackage[francais]{babel}
+%%%%%%%%%%
+
+
+%%%%%%%%%%%%% Document %%%%%%%%%%%%%%%%%%%%%
+\title{TP 4 - Au delà de Fourier \\
+  (DCT, DCT locale, multirésolution et ondelettes)} 
+\author{Maxime Descoteaux}
+\date{\today}
+\begin{document}
+\maketitle
+Vous devez rédiger un rapport
+et me remettre un zip avec votre code python.
+Commentez le code et assurez-vous que je puisse
+reproduire vos  résultats et figures. 
+Séparez votre code en différents fichiers pour faciliter la
+lecture. Des points seront attribués pour la qualité du document
+et ses figures, et la qualité du code python (10 points). 
+
+
+L'approximation linéaire garde  que les $M$ coefficients de plus
+basses fréquences dans l'espace de Fourier, c'est-à-dire les $M$
+premiers coefficients. Une approximation nonlinéaire
+garde que les $M$ coefficients les plus élévés de la décomposition ou
+transformée. Dans ce devoir, quand vous comparez des transformées,
+assurez-vous de toujours prendre les mêmes $M$.  
+
+\vspace{1cm}
+\begin{enumerate}
+
+\item {\bf Appproximations 1D. [10 points]}
+  À partir du \emph{piece regular} ou d'un signal 1D de votre choix,
+  reproduisez les 
+  figures de mon code \emph{locDCT\_demo.py}, disponible dans la Demo08. 
+  \begin{enumerate}
+  \item Illustrez votre signal. Combien de points dans votre signal?\\
+    (Si vous choississez un signal à vous, prenez un signal de taille
+    ``raisonable'' et assurez-vous qu'il se découpe bien.)
+  \item Décrivez votre choix de taille de segment et nombres de
+    coefficients à couper $M$.
+  \item Faites des approximations linéaires et non-linéaires de votre
+    signal
+  \item Rapporter les erreures quadratiques moyennes de toutes les
+    approximations dans un tableau. 
+  \end{enumerate}
+\vspace{4mm}
+
+
+%\vspace{1cm}
+%\begin{enumerate}
+% \item {\bf L'approximations multirésolution de Shannon.}
+%   \\ 
+% %% Watch out avec la definition des conditions
+% \begin{enumerate}
+%   \item On défini l'espace
+%     $\mathbf{V}_j$ comme l'ensemble des fonctions dont la transformée
+%     de Fourier a un support limité dans l'interval $[-2^{j} \pi,
+%     2^{j} \pi]$.  
+%     Démontrez que $\{\mathbf{V_j}\}_{j \in \mathbb{Z}}$ est une approximation
+%     multirésolution avec la fonction d'échelle suivante: 
+%     $$
+%     \phi(t) = \frac{\sin \pi t}{\pi t}
+%     $$ 
+    
+%     Il vous faut donc vérifier les 5 propriétés de la définition de 
+%     multirésolution donnée en classe. \\\\
+%     (Indice) Le théorème d'échantillonnage vous sera utile pour montrer
+%     que $\{\phi(t - n)\}_{n \in \mathbb{Z}}$ forme une base orthonormale de
+%     $V_0$. 
+
+
+% \item Trouvez les filtres de décomposition passe-bas et passe-haut,
+%   $h$ et $g$, associés à cette multirésolution.
+
+% %\item Montrez que la fonction $\phi$ suit la relation suivante:
+% %$$
+% %\phi(x) = \phi(2x) + \sum_{k \in \mathbb{Z}} \frac{2(-1)^k}{(2k+1)\pi}
+% %\phi(2x - 2k - 1).
+% %$$
+    
+% % \item Trouvez une expression pour l'ondelette $\psi$ associée à la
+% %   fonction d'échelle $\phi$.
+
+%  \end{enumerate}
+
+% \vspace{1cm}
+% \item {\bf Démontrez le théorème de reconstruction de Haar. } 
+
+% Supposons que 
+% $$
+% f = f_0 + w_0 + w_1 + ... + w_{j-1}
+% $$
+% avec 
+% $$
+% f_0(x) = \sum_{k\in \mathbb{Z}} a_k^0 \phi(x-k) \in V_0 \quad
+% \textrm{et} \quad
+% w_{j'}(x) = \sum_{k\in\mathbb{Z}} b_k^{j'} \psi(2^{j'}x - k) \in W_{j'}
+% $$
+% pour $0 \leq j' < j$. Alors,
+% $$
+% f(x) = \sum_{k\in\mathbb{Z}} a_l^j \phi(2^jx - l) \in V_j
+% $$
+% o\`u les $a_l^{j'}$ sont obtenus récursivement pour $j' = 1$, ensuite
+% $j' = 2$, jusqu'à $j' = j$ avec la relation suivante:
+% $$
+% a_l^{j'} = \left \{
+% \begin{array}{ll}
+% a_k^{j'-1} + b_k^{j'-1} & \textrm{si $l = 2k$ est pair} \\
+% a_k^{j'-1} - b_k^{j'-1} & \textrm{si $l = 2k+1$ est impair}
+% \end{array} \right .
+% $$
+% \vspace{1cm}
+% \item {\bf Splines cubiques 1D}. 
+%   Faites la décompositions en ondelettes du signal 'piece-regular'
+%   à partir des splines cubiques. Utilisez les valeurs du filtre miroir
+%   conjugué $h$ dans la table 7.1 donnée en classe. 
+%   Je vous donne les fonctions suivantes pour vous aider:
+%   (\emph{subsampling}, \emph{upsampling}, \emph{reverse}, \emph{cconv})
+%   \\
+  
+%   i)  Montrez les détails et les
+%   approximations, $W_j$ et $V_j$, intermédiaires.\\
+
+
+%   ii) Montrez l'orthogonalité de la transformation d'ondelettes
+%   (conservation d'énergie). Est-ce que l'énergie est parfaitement
+%   conservée? Pourquoi? \\
+
+%   iii) Faites la reconstruction en montrant les reconstructions
+%   partielles du signal.\\
+
+%   iv) Calculez l'erreur sur le signal reconstruit. \\
+
+%   v) Pour les échelles $2^j$, $4 \leq j \leq 8$, visualisez la forme
+%   des ondelettes provenant de votre analyse. 
+% \vspace{1cm}
+
+ 
+% \item {\bf Ondelettes de Daubechies 2D.} 
+%   À partir des coefficients du filtre h de la Table 7.2 et de la même
+%   image que pour la question précédente, implémentez
+%   la décomposition/reconstruction 2D en ondelettes de Daubechies avec
+%   $p=1, 2, 4$ et 10 moments nuls. \\
+
+%   i) Faites les décompositions et reconstructions en montrant les
+%   détails, approximations et reconstructions partielles intermédiares
+%   (semblable à la question 4). 
+%   Que remarquez-vous? Plus
+%   particulièrement, notez vos observations sur les régions régulières
+%   et aux contours de l'image.\\ 
+
+%   ii) Faites un tableau des erreurs de reconstruction de l'image,
+%   dépendant de l'ondelette utilisée.  Que remarquez-vous?\\
+
+%   iii) Pour chaque $p$, générez la forme des ondelettes 2D pour les
+%   orientations diagonal, horizontal, vertical. Les fonctions mesh ou
+%   surf vous serons utile. Que remarquez-vous?\\
+% \vspace{1cm}
+
+\item {\bf Approximations dans les bases de Fourier et d'ondelettes}
+  sur une image de votre choix. \\  
+  \begin{enumerate}
+\item  [5 pts] a) {\bf Approximation de Fourier.} L'approximation linéaire garde
+  que les $M$ coefficients de plus basses fréquences dans l'espace
+  de Fourier. Faites l'approximation linéaire dans Fourier gardant que 
+  $M$ coefficients, pour 3 $M$ différents et rapportez le SNR des
+  images approximées ainsi que les erreurs relatives d'approximation
+  sur les \emph{plot}.  (Vous avez déjà fait cela dans le TP3)
+  
+\item [10 pts] b) {\bf Approximation avec cosinus discrets et des cosinus discrets
+    locaux.}  En premier temps, faites l'approximation linéaire avec
+  une base de cosinus discrets (DCT) et une base de cosinus discrets
+  locaux (locDCT), gardant que les $M$ coefficients de plus basses
+  fréquences, pour 3 $M$ différents et rapportez le SNR des images
+  approximées ainsi que les erreurs relatives d'approximation sur les
+    \emph{plot}.  Utilisez les 
+  fonctions \emph{dct2.m} et \emph{idct2.m}, données en classe (vous
+  devez étendre ce que j'ai déjà fait en 1D en 2D). 
+
+\item [10 pts] c) {\bf Approximation d'ondelettes de Haar périodiques}. À partir
+  de votre ondelette de Haar, faites
+  l'approximation linéaire sur cette base en utilisant 3 $M$
+  différents. Rapportez le SNR des images approximées et les erreurs relatives
+  d'approximation sur les
+  \emph{plot}.
+  %Vous pouvez faire la version algébrique (comme en
+  %classe) ou celle avec les convolutions circulaires. 
+  
+%% \item [BONUS - 20 pts] d) {\bf Approximation d'ondelettes de Daubechies}. Utilisez une
+%%   des ondelettes de Daubechies (e.g. [h, g] $=$
+%%   compute\_wavelet\_filter('Daubechies', 4) pour l'ondelette de
+%%   Daubechies de support 4). Faites l'approximation linéaire pour 3 $M$
+%%   différents. Rapportez le SNR des images approximées et les erreurs
+%%   relatives d'approximation. Pour celle-ci, vous n'aurez pas le choix
+%%   que d'implémenter la version avec la convolution.
+  
+\item [10 pts] d) {\bf Approximations nonlinéaires.} Une approximation nonlinéaire
+  garde que les $M$ coefficients les plus élévés de la décomposition
+  dans une base. Faites les approximations nonlinéaires
+  avec les bases des parties (a) à (d).
+  
+\item [10 pts] e) Faites un {\bf tableau des SNR et des erreurs
+  d'approximations linéaires et nonlinéaires}. Que remarquez-vous? 
+  
+%% \item [BONUS - 10 pts] f) Tracez la courbe des erreurs
+%%   d'approximation en fonction de $M$. Pour un graphe optimal, mettez
+%%   sur l'axe x, $\log_{10}(M/N)$ et sur l'axe y, $\log_{10}( |f - f_M|^2 /
+%%   |f|^2)$, ou $N$ est le nombre de pixel dans l'image, $M$ le nombre
+%%   de coefficients, $f$ l'image originale et $f_M$ l'image approximée.  \\
+%%   Utilisez plus de 3 $M$ pour tracer cette courbe. Pensez à
+%%   votre affaire! Il y a moyen de faire ça très simplement et rapidement. \\
+%%   (indice: Conservation d'énergie)
+  
+\end{enumerate}
+
+ \begin{figure}[!b]
+  \begin{center}
+    \includegraphics[height=12cm]{image.eps}
+    \caption{4 images classiques en traitement d'images à approximer
+      nonlinéairement.} 
+  \end{center}
+\end{figure}  
+
+
+
+
+\newpage
+
+
+\item {\bf Approximations sur des images de différentes complexités}. \\  
+  
+\begin{enumerate}
+\item [20 pts] i) Faites les approximations nonlinéaires pour les 4 images de la
+  figure 1 (regular3, phantom, lena et le mandrill). Que
+  remarquez-vous? Les approximations dépendent-elles de la
+  ''complexité'' de l'image? Expliquez.   
+
+\item [5 pts] ii) Selon vous, quelle est la meilleure base? 
+  Pourquoi?
+
+\end{enumerate}
+\end{enumerate}
+
+
+\end{document}
