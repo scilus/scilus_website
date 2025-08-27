@@ -27,14 +27,17 @@
 \begin{document}
 \maketitle
 
-Ce TP 1 est à me remettre par courriel {\bf le 15 septembre} 
-dans un seul fichier zip bien organisé. 
+Ce TP 1 est à me remettre par courriel {\bf le 14 septembre} 
+dans un seul fichier zip bien organisé. Le but du TP est de vous
+familiariser avec Latex et Python tout en faisant un rappel
+mathématique. Même si vous travaillez en équipe, essayez de faire
+toutes les questions seul(e)s et de comprendre le Latex. 
 Vous devez rédiger un rapport avec les solutions en 
 \emph{Latex} et me remettre un zip avec votre code Python. Commentez
 le code et assurez-vous que je puisse reproduire vos 
 résultats. {\bf Ne PAS utilisez la toolbox symbolique de Python,
   i.e. pas besoin de coder le calcul des dérivées. Vous le faites à la
-main et vous implémentez.}
+main et vous implémentez de façon numérique.}
 Séparez votre code en différents fichiers pour faciliter la
 lecture. Des points seront attribués pour la qualité du document latex
 (5 points) et la qualité du code Python (5 points). Le TP vaut 40
@@ -68,19 +71,8 @@ dites-le sur le rapport.
       fonction évaluée à $x = 0.5$. 
 
     \item A l'aide des séries de Taylor, démontrez que 
-%      $$
-%      \cos(\theta) = \frac{e^{i\theta} + e^{-i\theta}}{2}
-%      $$      
-       $$
        \sin(\theta) = \frac{e^{i\theta} - e^{-i\theta}}{2i}
-       $$      
-      
-%     \item À l'aide des séries de Taylor, démontrez que 
-%       $$
-%       \frac{d( e^{i \theta})}{d\theta} = i e^{i \theta} = - \sin \theta
-%       + i \cos \theta
-%       $$      
-      
+       $$                  
   \end{enumerate}
   
 \vspace{1cm}
@@ -105,41 +97,14 @@ $$
  \item Ecrivez le système sous forme matricielle $A x = B$.
  \item Vérifiez votre solution en Python.
 \end{enumerate}
-% \vspace{1cm}
-% \item {\bf Racines n-ièmes d'un nombre complexe - formule de Moivre}
-%   \begin{enumerate}
-%     \item Trouvez les racines 3$^e$ de $z = e^{-i \pi / 6}$. Illustrez
-%       vos racines géométriquement (vous pouvez les dessiner à la
-%       main).
-      
-%     \item Trouvez les racines 4$^e$ de $z = 2.5 - 2.5
-%       \sqrt{3}i$. Illustrez vos racines géométriquement.
-
-%     \item Écrivez une fonction Matlab/Python qui calcule la $n^e$ racine 
-%       d'un nombre complexe. Vérifiez vos solutions en (a) et (b).
-
-%   \end{enumerate}
 
 \vspace{1cm}
-%% \item {\bf Produit Hermitien. [10 points]} Soit, 
-%%   $f(x, y) = \sin(x)\sin(2y)$ et $g(x,y) = \sin(x)\sin(y)$,
-%%   calculez et démontrez le résultat de l'intégrale suivante: 
-%%   $$
-%%   \int_{-\pi}^{\pi} \int_{-\pi}^{\pi} f(x,y)\cdot g(x,y) dx dy.
-%%   $$
-%%   Que concluez-vous sur les fonctions $f(x,y)$ et $g(x,y)$?
-%%   \\
-%%   \\
-%%   Vérifiez votre résulat en Matlab/Python
-%% \vspace{1cm}
 
 \item {\bf Bases orthogonales et orthonormales. [5 points]} 
   \begin{enumerate}
     \item 
       $\overrightarrow{z}^1 = (1 - i, 1)$ et
       $\overrightarrow{z}^2 = (i, 1-i)$ $\in \mathcal{C}^2$ 
-      %$\overrightarrow{z}^1 = (i-1, 1)$ et
-      %$\overrightarrow{z}^2 = (-i, 1-i)$ $\in \mathcal{C}^2$ 
       (nombres complexes dans le
       plan 2D). Montrez que $\overrightarrow{z}^1$ et $\overrightarrow{z}^2$
       sont orthogonaux. 
