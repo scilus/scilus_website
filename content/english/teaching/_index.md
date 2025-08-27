@@ -7,11 +7,9 @@ draft: false
 
 basic:
   name : "IMN359"
-  #price: "A2024"
-  # price_per : "month"
   info : "**Outils mathématiques du traitement d’images**"
   services:
-   - "Automne 2024"
+   - "Automne 2025"
   button:
     enable : true
     label : "Notes et support de cours"
@@ -35,11 +33,9 @@ basic:
 
 business:
   name : "IMN530/IMN708"
-#  price: "A2024"
-  # price_per : "month"
   info : "**Reconstruction et analyse d’images médicales**"
   services:
-  - "Automne 2024"
+  - "Automne 2025"
   button:
     enable : true
     label : "Notes et support de cours"
