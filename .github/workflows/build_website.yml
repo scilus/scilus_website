@@ -11,7 +11,7 @@ concurrency:
 
 jobs:
   deploy:
-    runs-on: scil-website-runners
+    runs-on: scilus-docker
 
     steps:
       - name: Install dependancies
