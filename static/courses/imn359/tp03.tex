@@ -32,7 +32,7 @@ lecture. Des points seront attribués pour la qualité du document
 % latex
 et ses figures (5 points), et la qualité du code Python (5 points). 
 
-{\bf La date de remise sera déterminée en classe.}
+{\bf La date de remise est 16 novembre. À confirmer en classe.}
 % Exercice 1.
 % g0(n) = [0.5 1 1 0.5].
 % 1. Calculer G0(k) = TFD[g0(n)] pour N = 4.
@@ -107,26 +107,42 @@ et ses figures (5 points), et la qualité du code Python (5 points).
   \begin{enumerate}  
   \vspace{0.5cm}  
   \item En Python, construiser
-    et illustrer la Gaussienne 1D et sa TF de la partie (a), utilisant
-    un $\sigma = 6$ et 1024 points discrets de temps $t$. 
+    et illustrer la Gaussienne 1D et sa TF de l'énoncé, utilisant
+    un $\sigma = 6$ et $N$ points discrets de temps $t$. Calculez
+    l'aire sous la courbe de la Gaussienne. L'aire sous la courbe
+    devrait être approximativement la même peu importe le $N$ choisi.
+    
   
 \vspace{0.5cm}  
   \item En utilisant la \emph{fft} de Python, calculer et illustrer sa
     transformée de Fourier $G(f)$. \\
-    Visualiser le résultat et assurez-vous que le résultat théorique en b)
-    correspond à votre résultat trouvé numériquement.
+    Visualiser le résultat et assurez-vous que le résultat théorique
+    de la partie a) correspond à votre résultat trouvé numériquement.\\
+    Indices/Rappels:
+    \begin{enumerate}
+    \item Votre solution doit être robuste au choix de $N$ et $t$
+    \item Le centre du spectre de fourier (la fréquence 0 dans
+      fourrier) doit être égale à la somme du signal de la
+      Gaussienne). Donc, l'aire sous la courbe de la Gaussienne a un
+      impact.  
+    \item L'énergie entre le monde temporel et fréquentiel doit être
+      conservé.
+    \item La fonction \emph{fftfreq} peut être très utile. Il faut
+      comprendre ce qu'elle fait. 
+    \end{enumerate}
 
 \vspace{0.5cm}  
   \item Charger le signal 1D 'piece-regular'
     (piece-regular.mat). En utilisant la fonction \emph{rand},
     ajouter-y  un bruit additif avec un 
     écart type de votre choix (piece-regular + $\tau
-    \cdot$rand(1024,1)). Si $\tau=0.1$, vous ajoutez 10\% de bruit. 
+    \cdot$np.random.rand(N). Si $\tau=0.1$, vous ajoutez 10\% de
+    bruit.  
     Illustrer le signal et sa version bruité en faisant un subplot.
 
 \vspace{0.5cm}  
   \item Illustrer de façon pratique le théorème de convolution. $(f *
-  g)(t) = \mathcal{TF}^{-1}(F(w) G(w))$.
+    g)(t) = \mathcal{TF}^{-1}(F(w) G(w))$.
 
   \begin{enumerate}
     \item D'abord, calculer la convolution du signal bruité et du
@@ -144,7 +160,7 @@ et ses figures (5 points), et la qualité du code Python (5 points).
   \end{enumerate}
 \end{enumerate}
 
-\begin{figure}[!t]
+\begin{figure}[!h]
   \begin{center}
     \begin{tabular}{cc}   % table avec 2 colonnes
       \includegraphics[width=9cm]{piece-regular} &
@@ -169,7 +185,7 @@ et ses figures (5 points), et la qualité du code Python (5 points).
 
 \begin{figure}[!t]
   \begin{center}
-    \includegraphics[width=9cm]{Sinusoidal.jpg} 
+    \includegraphics[width=6.5cm]{Sinusoidal.jpg} 
     \caption{\label{fig:sin_filtre} 
       Exemple d'un filtre cosinusoidal sur l'intervalle $[-\pi, \pi]$.}  
   \end{center}
