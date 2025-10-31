@@ -8,7 +8,6 @@
 | TP4 – Au delà de Fourier (DCT, DCT locale, multirésolution et ondelettes) | [latex](courses/imn359/tp04.tex), [PDF](courses/imn359/tp04.pdf) | [Data](courses/imn359/tp04_data.zip)
 
 
-(courses/imn359/demos/Labo_FFT.zip)
 
 
 ## Travaux Pratiques
