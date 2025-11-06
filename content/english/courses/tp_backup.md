@@ -17,3 +17,12 @@
 | **TP1 – Modalité d'imagerie médicale, bruit et débruitage** |[PDF](imn_courses/imn530/TP1.pdf) | [Data](imn_courses/imn530/Data_TP1.zip) 
 | **TP2 – Recalage** | [PDF](imn_courses/imn530/TP2.pdf) | [Data](imn_courses/imn530/Data_TP2.zip)
 | **TP3 – Multi-modalités, reconstruction et visualisation avancées** | [PDF](imn_courses/imn530/TP3.pdf) | [Data](imn_courses/imn530/Data_TP3.zip)  
+
+
+
+| 					      | [Similarité (PDF)](imn_courses/imn530/cours/Recalage-Simil.pdf) | [(PPTX)](imn_courses/imn530/cours/Recalage-Simil.pptx) 	  
+| 					      | [Transfo-Optim (PDF)](imn_courses/imn530/cours/Recalage-Transfo-Optim.pdf)| [(PPTX)](imn_courses/imn530/cours/Recalage-Transfo-Optim.pptx) |
+| 					      | [Non-Linéaire et plus (PDF)](imn_courses/imn530/cours/Recalage-NonLineaire-et-plus.pdf), [(PPTX)](imn_courses/imn530/cours/Recalage-NonLineaire-et-plus.pptx)
+
+
+
