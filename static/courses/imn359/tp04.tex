@@ -29,10 +29,11 @@ Commentez le code et assurez-vous que je puisse
 reproduire vos  résultats et figures. 
 Séparez votre code en différents fichiers pour faciliter la
 lecture. Des points seront attribués pour la qualité du document
-et ses figures, et la qualité du code python (10 points). 
+et ses figures, et la qualité du code python (10 points).  {\bf La de
+  remise du TP sera déterminée en classe.}
 
 
-L'approximation linéaire garde  que les $M$ coefficients de plus
+L'approximation linéaire garde que les $M$ coefficients de plus
 basses fréquences dans l'espace de Fourier, c'est-à-dire les $M$
 premiers coefficients. Une approximation nonlinéaire
 garde que les $M$ coefficients les plus élévés de la décomposition ou
@@ -43,19 +44,17 @@ assurez-vous de toujours prendre les mêmes $M$.
 \begin{enumerate}
 
 \item {\bf Appproximations 1D. [10 points]}
-  À partir du \emph{piece regular} ou d'un signal 1D de votre choix,
-  reproduisez les 
-  figures de mon code \emph{locDCT\_demo.py}, disponible dans la Demo08. 
+  À partir du \emph{piece regular},
+  reproduisez les figures de mon code de DCT locale, disponible dans
+  la Demo08.  
   \begin{enumerate}
-  \item Illustrez votre signal. Combien de points dans votre signal?\\
-    (Si vous choississez un signal à vous, prenez un signal de taille
-    ``raisonable'' et assurez-vous qu'il se découpe bien.)
+  \item Illustrez votre signal. 
   \item Décrivez votre choix de taille de segment et nombres de
     coefficients à couper $M$.
   \item Faites des approximations linéaires et non-linéaires de votre
     signal
   \item Rapporter les erreures quadratiques moyennes de toutes les
-    approximations dans un tableau. 
+    approximations dans un tableau.  
   \end{enumerate}
 \vspace{4mm}
 
@@ -171,32 +170,39 @@ assurez-vous de toujours prendre les mêmes $M$.
 %   surf vous serons utile. Que remarquez-vous?\\
 % \vspace{1cm}
 
-\item {\bf Approximations dans les bases de Fourier et d'ondelettes}
-  sur une image de votre choix. \\  
+\item {\bf Approximations avec des transformées de Fourier et d'ondelettes}
+  sur une image de votre choix.  Attention! Mettez-la en noire et
+  blanc. Faites attention au type de l'image. \\  
   \begin{enumerate}
 \item  [5 pts] a) {\bf Approximation de Fourier.} L'approximation linéaire garde
   que les $M$ coefficients de plus basses fréquences dans l'espace
   de Fourier. Faites l'approximation linéaire dans Fourier gardant que 
   $M$ coefficients, pour 3 $M$ différents et rapportez le SNR des
   images approximées ainsi que les erreurs relatives d'approximation
-  sur les \emph{plot}.  (Vous avez déjà fait cela dans le TP3)
+  sur les \emph{plot}.  Illustrez les images des coefficients des transformées
+  avant et après approximations linéaires.  (Vous avez déjà fait cela
+  dans le TP3) 
   
 \item [10 pts] b) {\bf Approximation avec cosinus discrets et des cosinus discrets
-    locaux.}  En premier temps, faites l'approximation linéaire avec
-  une base de cosinus discrets (DCT) et une base de cosinus discrets
+    locaux.}  En premier temps, faites l'approximation linéaire avec 
+  une transformée de cosinus discrets (DCT) et une transformée de cosinus discrets
   locaux (locDCT), gardant que les $M$ coefficients de plus basses
   fréquences, pour 3 $M$ différents et rapportez le SNR des images
   approximées ainsi que les erreurs relatives d'approximation sur les
     \emph{plot}.  Utilisez les 
-  fonctions \emph{dct2.m} et \emph{idct2.m}, données en classe (vous
-  devez étendre ce que j'ai déjà fait en 1D en 2D). 
+  fonctions \emph{dct2.py} et \emph{idct2.py}, données en classe (vous
+  devez étendre ce que j'ai déjà fait en 1D en 2D). Illustrez les
+  images des coefficients des transformées 
+  avant et après approximations linéaires.  
 
-\item [10 pts] c) {\bf Approximation d'ondelettes de Haar périodiques}. À partir
+\item [10 pts] c) {\bf Approximation d'ondelettes de Haar
+  périodiques}. À partir 
   de votre ondelette de Haar, faites
-  l'approximation linéaire sur cette base en utilisant 3 $M$
+  l'approximation linéaire avec cette transformée en utilisant 3 $M$
   différents. Rapportez le SNR des images approximées et les erreurs relatives
   d'approximation sur les
-  \emph{plot}.
+  \emph{plot}. Illustrez les images des coefficients des transformées
+  avant et après approximations linéaires. 
   %Vous pouvez faire la version algébrique (comme en
   %classe) ou celle avec les convolutions circulaires. 
   
@@ -209,9 +215,10 @@ assurez-vous de toujours prendre les mêmes $M$.
 %%   que d'implémenter la version avec la convolution.
   
 \item [10 pts] d) {\bf Approximations nonlinéaires.} Une approximation nonlinéaire
-  garde que les $M$ coefficients les plus élévés de la décomposition
-  dans une base. Faites les approximations nonlinéaires
-  avec les bases des parties (a) à (d).
+  garde que les $M$ coefficients les plus élévés de la
+  transformée. Faites les approximations nonlinéaires 
+  avec toutes les transformées des parties (a) à (d). Illustrez-bien
+  les images des coefficients de la transformée conservées. 
   
 \item [10 pts] e) Faites un {\bf tableau des SNR et des erreurs
   d'approximations linéaires et nonlinéaires}. Que remarquez-vous? 
@@ -236,8 +243,6 @@ assurez-vous de toujours prendre les mêmes $M$.
 \end{figure}  
 
 
-
-
 \newpage
 
 
@@ -249,7 +254,7 @@ assurez-vous de toujours prendre les mêmes $M$.
   remarquez-vous? Les approximations dépendent-elles de la
   ''complexité'' de l'image? Expliquez.   
 
-\item [5 pts] ii) Selon vous, quelle est la meilleure base? 
+\item [5 pts] ii) Selon vous, quelle est la meilleure transformée? 
   Pourquoi?
 
 \end{enumerate}
