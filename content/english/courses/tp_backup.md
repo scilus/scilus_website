@@ -26,3 +26,37 @@
 
 
 
+
+
+| **Notes de cours:** | [cliquez ici pour toutes les notes dans un seul PDF](courses/imn359/cours/IMN359_NotesDeCours.pdf)
+| **Github du cours:** | [repo git de toutes les démos](https://github.com/scilus/teaching_imn359)
+
+
+| **00: Plan du cours et introduction** | [diapos](courses/imn359/cours/Chapitre1.pdf) |            |   
+| **01: Introduction à Python** | [diapos](courses/imn359/cours/Intro_python.pptx)  | [code sur github](https://github.com/scilus/teaching_imn359/tree/main/Intro_python) | [zip](courses/imn359/cours/Intro_python.zip)
+| **02: Introduction à Latex** |  | [code sur github](https://github.com/scilus/teaching_imn359/tree/main/Intro_Latex) | [zip](courses/imn359/cours/Intro_Latex.zip)
+| **03: Nombres complexes et rappels mathématiques** | | [notes](courses/imn359/cours/Notes_NombresComplexes.pdf) | [démos 01](https://github.com/scilus/teaching_imn359/blob/main/Demo_python/demo01.py)
+| **04: Produit Hermitien – Bases orthogonales** | | [notes](courses/imn359/cours/Notes_BaseOrthogonale.pdf) | [démos 02](https://github.com/scilus/teaching_imn359/blob/main/Demo_python/demo02.py)
+| **05: Harmoniques – Série de Fourier** | | [notes](courses/imn359/cours/Notes_SerieFourier.pdf) | [démos 03](https://github.com/scilus/teaching_imn359/blob/main/Demo_python/demo03.py)
+| **06: Série de Fourier complexe – erreur d’approximation – symétrie** | | [notes](courses/imn359/cours/Notes_SerieFourierComplexe.pdf) | [démos 04](https://github.com/scilus/teaching_imn359/blob/main/Demo_python/demo04.py)
+| **07: Définition de la transformée de Fourier** | [notes](courses/imn359/cours/Notes_TFcontinue.pdf) | [démos TF](https://github.com/scilus/teaching_imn359/blob/main/Demo_python/demo_TF.py) | [démos 05](https://github.com/scilus/teaching_imn359/blob/main/Demo_python/demo05.py)
+| **08: Propriétés de la transformée de Fourier** | | [notes](courses/imn359/cours/Notes_ProprietesTF.pdf) | [Autres notes](courses/imn359/misc/symmetry.pdf)
+| **Révision Examen Intra** | [Diapos](courses/imn359/cours/RevisionIntra.pdf) | |
+| **09: Transformée de Fourier Discrète** | | [notes](courses/imn359/cours/Notes_TFD.pdf) | [démos FFT](https://github.com/scilus/teaching_imn359/blob/main/Demo_python/demo05_tfd_fft.py)
+| | | |
+| **10: Transformée de Fourier Rapide (FFT)** | [diapos](courses/imn359/cours/Fourier.pdf) | [notes](courses/imn359/cours/Notes_FFT.pdf) | [article](courses/imn359/misc/Cooley_Tukey_1965.pdf)
+| **11: Lab sur la Transformée de Fourier**	| [diapos](courses/imn359/cours/Labo_FFT.pdf) | [Labo FFT](courses/imn359/demos/Labo_FFT.zip) | [démos 06](https://github.com/scilus/teaching_imn359/blob/main/Demo_python/demo06.py)
+| **12: Convolution & Corrélation**	 | [diapos](courses/imn359/cours/Convolution.pptx) | [notes](courses/imn359/cours/Notes_Convolution.pdf) | [démo convolution](https://github.com/scilus/teaching_imn359/blob/main/Demo_python/demoConvolution.py)
+| **13: Échantillonnage** | [diapos](courses/imn359/cours/Notes_EchantillonnageDiapo.pdf) | [notes](courses/imn359/cours/Notes_Echantillonnage.pdf) | [démos 07](https://github.com/scilus/teaching_imn359/blob/main/Demo_python/demo07.py)
+| **14: Limites de Fourier et Transformée en Cosinus Discrets (DCT)** | [diapos](courses/imn359/cours/Cours-Limites-Fourier.pdf) | [notes](https://docs.scipy.org/doc/scipy/reference/generated/scipy.fftpack.dct.html) | [démos 08](https://github.com/scilus/teaching_imn359/blob/main/Demo_python/demo08.py)
+| **15: DCT locale** | | [notes](courses/imn359/cours/Notes_TCD_TKL.pdf) | [démos 09](https://github.com/scilus/teaching_imn359/blob/main/Demo_python/demo09.py)
+| **16: Multi-résolution** | [diapos](courses/imn359/cours/Cours_Multiresolution.pdf) | [notes](courses/imn359/cours/Notes_Multiresolution.pdf) | [démos 10](https://github.com/scilus/teaching_imn359/blob/main/Demo_python/demo10.py)
+| **17: Ondelettes de Haar** | [diapos](courses/imn359/cours/Cours_Ondelettes1D.pdf) | [notes](courses/imn359/cours/Notes_Haar1D.pdf) | [démos 11](https://github.com/scilus/teaching_imn359/blob/main/Demo_python/demo11.py)
+| **18: Ondelettes 1D** | [diapos](courses/imn359/cours/Cours_Ondelettes2D.pdf) | [notes](courses/imn359/cours/Notes_Haar2D.pdf) | [démos 12 - Ondelettes 1D](https://github.com/scilus/teaching_imn359/blob/main/Demo_python/demo12_ondelettes1D.py)
+| **19: Approixmations dans des bases orthogonales** | | | [démos 12 - approximations](https://github.com/scilus/teaching_imn359/blob/main/Demo_python/demo12_approximations.py)
+| **20: Conclusion** | [diapos](courses/imn359/cours/Conclusion.pdf) | |
+
+| TP1 – Rappels mathématiques | [latex](courses/imn359/tp01.tex) | [PDF](courses/imn359/tp01.pdf) 
+| TP2 – Série de Fourier et Transformée de Fourier | [latex](courses/imn359/tp02.tex) | [PDF](courses/imn359/tp02.pdf) 
+| TP3 – Transformée de Fourier Discrète, Convolution & Echantillonnage  | [latex](courses/imn359/tp03.tex), [PDF](courses/imn359/tp03.pdf) | [Data](courses/imn359/tp03_data.zip)
+| TP4 – Au delà de Fourier (DCT, DCT locale, multirésolution et ondelettes) | [latex](courses/imn359/tp04.tex), [PDF](courses/imn359/tp04.pdf) | [Data](courses/imn359/tp04_data.zip)
