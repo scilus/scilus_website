@@ -15,6 +15,16 @@ basic:
     label : "Notes et support de cours"
     link : "courses/imn359"
 
+basic:
+  name : "IMN259"
+  info : "**Analyse d’Images**"
+  services:
+   - "Hiver 2026"
+  button:
+    enable : true
+    label : "Notes et support de cours"
+    link : "courses/imn259"
+
 #professional:
 #  name : "IMN764"
 #  price: "$49"
