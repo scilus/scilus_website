@@ -15,7 +15,7 @@ basic:
     label : "Notes et support de cours"
     link : "courses/imn359"
 
-professionnal:
+professional:
   name : "IMN259"
   info : "**Analyse d’Images**"
   services:
