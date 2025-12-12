@@ -6,6 +6,14 @@ $(window).on('load', function () {
 (function($) {
 	'use strict';
 
+	// Fix for mobile navbar toggler not working
+	// Manually attach click handler to navbar toggler
+	$('.navbar-toggler').on('click', function(e) {
+		e.preventDefault();
+		var target = $(this).data('target');
+		$(target).collapse('toggle');
+	});
+
 	//slider
 	$('.slider').not('.slick-initialized').slick({
 		slidesToShow: 1,
