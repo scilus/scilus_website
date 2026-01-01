@@ -12,7 +12,7 @@ draft: false
 The SCIL has created several bundle atlases that facilitate the extraction of specific bundles with precision.
 
 {{< faq "Arnold" >}}
-<img src="https://github.com/scilus/atlas_arnold/blob/main/doc/Figure_4.png?raw=true" alt="drawing" height="400"/>
+<img src="https://raw.githubusercontent.com/scilus/atlas_arnold/refs/heads/main/doc/Figure_4.png" alt="drawing" height="400"/>
 
 *Extraction of the Pulvino-temporal connectivity involved in the lexical retrieval process of picture naming into four fundamental fiber contingents.*
 

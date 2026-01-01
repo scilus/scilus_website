@@ -23,12 +23,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4.1.1
         with:
-          submodules: ''
+          submodules: false
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.123.8'
+          hugo-version: '0.92.2'
           extended: true
 
       - name: Build
@@ -38,7 +38,6 @@ jobs:
         uses: burnett01/rsync-deployments@7.0.0
         with:
             switches: --delete -r
-            legacy_allow_rsa_hostkeys: "true"
             path: scil.usherbrooke.ca/
             remote_path: ${{ secrets.REMOTE_PATH }}
             remote_host: ${{ secrets.REMOTE_HOST }}

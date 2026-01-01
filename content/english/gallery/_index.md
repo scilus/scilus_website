@@ -10,9 +10,9 @@ draft: false
 
 <h3 style="text-align:center">SCIL images</h3>
 
-{{< gallery dir="images/gallery/" />}} {{< load-photoswipe >}}
+{{< gallery dir="/images/gallery/" />}} {{< load-photoswipe >}}
 
 
 <h3 style="text-align:center">SCIL group pictures</h3>
 
-{{< gallery dir="images/lab/" />}} {{< load-photoswipe >}}
+{{< gallery dir="/images/lab/" />}} {{< load-photoswipe >}}
