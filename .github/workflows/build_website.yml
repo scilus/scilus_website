@@ -36,6 +36,7 @@ jobs:
           hugo -D -F -b "https://scil.usherbrooke.ca" -d scil.usherbrooke.ca
           find scil.usherbrooke.ca/ -type d -exec chmod 755 {} +
           find scil.usherbrooke.ca/ -type f -exec chmod 644 {} +
+          ls -alR scil.usherbrooke.ca/courses/
 
       - name: rsync deployments
         uses: burnett01/rsync-deployments@v8
