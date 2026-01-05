@@ -14,6 +14,9 @@ $(window).on('load', function () {
 		$(target).collapse('toggle');
 	});
 
+	// Open PDF links in new tab to prevent navigation issues
+	$('a[href$=".pdf"]').attr('target', '_blank').attr('rel', 'noopener noreferrer');
+
 	//slider
 	$('.slider').not('.slick-initialized').slick({
 		slidesToShow: 1,
