@@ -16,6 +16,8 @@ draft: false
 
 ## List of SCILUS singularity images
 
+- <a href="containers/scilus_2.1.1.sif" download="containers/scilus_2.1.1.sif" class="highlight-link">scilus_2.1.1.sif</a>
+
 - <a href="containers/scilus_2.1.0.sif" download="containers/scilus_2.1.0.sif" class="highlight-link">scilus_2.1.0.sif</a>
 
 - <a href="containers/scilus_2.0.2.sif" download="containers/scilus_2.0.2.sif" class="highlight-link">scilus_2.0.2.sif</a>
