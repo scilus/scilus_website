@@ -1,0 +1,72 @@
+---
+title: "IMN259 - Analyse d'Images"
+date: 2020-04-18T10:07:21+06:00
+# post image
+# image: "images/blog/post-1.jpg"
+# post type (regular/featured)
+type: "featured"
+# meta description
+description: "This is meta description"
+# post draft
+draft: false
+---
+
+## Sommaire
+
+| | |
+|--|--|
+|**Session:** | Hiver H2026
+| **Professeur:** | Maxime Descoteaux
+| **Assistant(e):** | 	Aucun
+| **Période de cours::** | Mardi 9h30 à 10h20 au D3-2032 <br> Vendredi 8h30 à 10h20 au D3-2034 (et lab D4-1017)
+| **Période de disponibilités:** | Par Teams ou sur demande 
+| **Absences:** | Aucune
+
+## Notes et support de cours
+
+<style>
+table {
+    border-collapse: collapse;
+}
+table, th, td {
+   border: none!important;
+}
+td:first-child {
+  width: 50%;
+}
+blockquote {
+    border-left: solid blue;
+    padding-left: 10px;
+}
+</style>
+| | | | |
+|-------------|-------------|-------|--------|
+| **00: Plan du cours** | [diapos](courses/imn259/cours/IMN259-0-Plan.pdf) | [PDF](courses/imn259/IMN259-H2026-plan-de-cours.pdf) | 
+| **01: Introduction et Formats d'images** | diapos [PDF](imn_courses/imn259/IMN259-1-Introduction.pdf)/[pptx](imn_courses/imn259/IMN259-1-Introduction.pptx) | [démo 01](courses/imn259/demos/demo_01_formats.zip) | 
+| **02: Outils pour l'analyse d'images (opérations ponctuelles, histogramme et son traitement)** | diapos [PDF](imn_courses/imn259/IMN259-2-Outils.pdf)/[pptx](imn_courses/imn259/IMN259-2-Outils.pptx) | [démo 02](courses/imn259/demos/demo_02_hist.zip) | 
+| **03: Traitement d'images (transformations géométriques, bruit, rapport signal sur bruit, opérations inter-images)** | diapos [PDF](imn_courses/imn259/IMN259-3-Traitement.pdf)/[pptx](imn_courses/imn259/IMN259-3-Traitement.pptx) | [démo 03 - interpolation](courses/imn259/demos/demo_03_interpolation_clean.zip) |
+| | | [démo 03 - bruit](courses/imn259/demos/demo_03_bruit.zip) |
+| | | [démo 03 - video](courses/imn259/demos/demo_03_video_clean.zip) | 
+| **Révision Examen Intra** | [diapos PPTX](courses/imn259/cours/Intra.pptx) |  [diapos PDF](courses/imn259/cours/Intra.pdf) | 
+| **04: Filtrage et corrélation** | diapos [PDF](imn_courses/imn259/IMN259-4-Filtrage.pdf)/[pptx](imn_courses/imn259/IMN259-4-Filtrage.pptx) | |
+| **05: Extraction des charactéristiques** | diapos [PDF](imn_courses/imn259/IMN259-5-Extraction.pdf)/[pptx](imn_courses/imn259/IMN259-5-Extraction.pptx) | [démo 05 - dérivées](courses/imn259/demos/demo_05_derivees.zip) |
+| **06: Conclusion et Révision pour le final** | [diapos PPTX](img_courses/imn259/Final.pptx) |  [diapos PDF](imn_courses/imn259/Final.pdf) | 
+
+## Travaux Pratiques
+|
+| --- | --- | --- |
+| TP1 – Introduction à l'analyse d'images | [PDF](courses/imn259/tp1.pdf) | [Code et Données](courses/imn259/tp1_code_data.zip)  
+| TP2 – Outils pour l'analyse d'images | [PDF](courses/imn259/tp2.pdf) | [Code et Données](courses/imn259/tp2_code_data.zip)   
+| TP3 – Traitement d'images et filtrage | [PDF](courses/imn259/tp3.pdf) | [Code et Données](courses/imn259/tp3_code_data_clean.zip)   
+| TP4 – Extraction de Caractéristiques | [PDF](courses/imn259/tp4.pdf) | [Code et Données](courses/imn259/tp4_code_data.zip)    
+
+
+## Autres sites/documents utiles
+|
+| -- |
+| [Guide Latex](courses/imn359/misc/latex-guide.pdf)
+| [Faire du latex en équipe avec Overleaf](https://www.overleaf.com/)
+| [Python tutorial](https://docs.python.org/3/tutorial/)
+| [Transformée de Fourier en vidéo (en)](https://www.youtube.com/watch?v=spUNpyF58BY )
+
+

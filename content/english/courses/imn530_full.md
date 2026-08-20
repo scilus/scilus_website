@@ -15,12 +15,12 @@ draft: false
 
 | | |
 |--|--|
-|**Session:** | Automne A2026
+|**Session:** | Automne A2025
 | **Professeur:** | Maxime Descoteaux
-| **Assistant(e):** | Charles Poirier 	
-| **Période de cours::** | Jeudi 8h30-10h20  <br>Vendredi 11h30 à 12h20
+| **Assistant(e):** | 	
+| **Période de cours::** | Jeudi 10h30-12h20 au D4-2021 <br>Vendredi 11h30 à 12h20 au D3-2032
 | **Période de disponibilités:** | Par Teams ou sur demande pour une rencontre en personne.
-| **Absences:** | 1 et 2 octobre
+| **Absences:** | Semaine du 10 au 17 octobre
 
 ## Notes et support de cours
 
@@ -59,9 +59,13 @@ blockquote {
 |
 | --- | --- | --- |
 | **TP0 – Mise en forme et setup informatique** |[PDF](imn_courses/imn530/TP0.pdf) | [Data](imn_courses/imn530/Data_TP0.zip) 
+| **TP1 – Modalité d'imagerie médicale, bruit et débruitage** |[PDF](imn_courses/imn530/TP1.pdf) | [Data](imn_courses/imn530/Data_TP1.zip) 
+| **TP2 – Recalage** |[PDF](imn_courses/imn530/TP2.pdf) | [Data](imn_courses/imn530/Data_TP2.zip) 
+| **TP3 – Multi-modalités, reconstruction et visualisation avancées** | [PDF](imn_courses/imn530/TP3.pdf) | [Data](imn_courses/imn530/Data_TP3.zip)  
 
 
 ## Autres sites/documents utiles
+
 |
 | -- |
 | [Guide Latex](courses/imn359/misc/latex-guide.pdf)
