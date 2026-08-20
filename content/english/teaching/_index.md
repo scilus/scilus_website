@@ -9,7 +9,7 @@ basic:
   name : "IMN359"
   info : "**Outils mathématiques du traitement d’images**"
   services:
-   - "Automne 2025"
+   - "Automne 2026"
   button:
     enable : true
     label : "Notes et support de cours"
@@ -19,7 +19,7 @@ professional:
   name : "IMN259"
   info : "**Analyse d’Images**"
   services:
-   - "Hiver 2026"
+   - "Hiver 2027"
   button:
     enable : true
     label : "Notes et support de cours"
@@ -45,7 +45,7 @@ business:
   name : "IMN530/IMN708"
   info : "**Reconstruction et analyse d’images médicales**"
   services:
-  - "Automne 2025"
+  - "Automne 2026"
   button:
     enable : true
     label : "Notes et support de cours"
