@@ -65,6 +65,12 @@ The SCIL distributes a few containers that can be used to run the [TractoFlow](h
 
 {{< faq "MI-Brain" >}}
 The SCIL has contributed to, and highly recommends, [MI-Brain](https://github.com/imeka/mi-brain) as a visualization and interaction tool for Diffusion MRI and neuroimaging datasets.
+
+Our latest versions for each OS (if you have any issue with MI-Brain don't hesitate to send a message to Arnaud, Maxime or François):
+  - <a href="softwares/MI-Brain-linux-x86_64.tar.gz" download="softwares/MI-Brain-linux-x86_64.tar.gz" class="highlight-link">Linux</a>
+ - <a href="softwares/MI-Brain-mac-arm64.dmg" download="softwares/MI-Brain-mac-arm64.dmg" class="highlight-link">MacOS (arm64)</a>
+ - <a href="softwares/MI-Brain-mac-x86_64.dmg" download="softwares/MI-Brain-mac-x86_64.dmg" class="highlight-link">MacOS (x64)</a>
+ - [Windows](https://github.com/imeka/mi-brain/releases/download/2020.04.09/MI-Brain-2020.04.09_r2e0ff5-windows-x86_64.exe)
 {{</ faq >}}
 
 </div>

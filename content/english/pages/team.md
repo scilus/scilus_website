@@ -13,8 +13,8 @@ draft: false
 ### Students
 
 - Etienne Saint-Amant (master: 2011)
-- Michaël Bernier (master: 2012)
 - Arnaud Boré (master: 2012)
+- Michaël Bernier (master: 2012)
 - Caroline Presseau (master: 2014)
 - Samuel St-Jean (master: 2015)
 - Alexandre Gauvin (master: 2016)
@@ -32,6 +32,12 @@ draft: false
 - Guillaume Theaud (PhD: 2022)
 - Jon Haitz Legarreta Gorrono (PhD: 2023)
 - Sami Obaid
+- Graham Little (PostDoc: 2024)
+- Philippe Karan (PhD: 2025)
+- Erick Hernandez (PhD: 2025)
+- Antoine Théberge (PhD: 2026)
+- Emmanuelle Renauld (PhD: 2026)
+- Antoine Royer (master: 2026)
 
 ### Co-direction
 
