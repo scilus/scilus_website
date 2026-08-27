@@ -1,33 +1,6 @@
 {
   "phd": [
     {
-      "name": "Antoine Théberge",
-      "websiteUrl": "https://www.antoinetheberge.ca/",
-      "scholarId": "m5GXCssAAAAJ",
-      "twitterId": "antoinetheb",
-      "linkedinId": "antoine-théberge-3a2509b3",
-      "githubId": "antoinetheb",
-      "phdStartYear": 2021
-    },
-    {
-      "name": "Emmanuelle Renauld",
-      "websiteUrl": "https://sites.google.com/site/renauldemmanuelle/home",
-      "scholarId": "",
-      "twitterId": "",
-      "linkedinId": "emmanuelle-renauld",
-      "githubId": "EmmaRenauld",
-      "phdStartYear": 2019
-    },
-    {
-      "name": "Philippe Karan",
-      "websiteUrl": "",
-      "scholarId": "WLMs7IMAAAAJ",
-      "twitterId": "",
-      "linkedinId": "philippe-karan",
-      "githubId": "karanphil",
-      "phdStartYear": 2021
-    },
-    {
       "name": "Stanislas Thoumyre",
       "linkedinId": "stanislas-thoumyre",
       "githubId": "ThoumyreStanislas",
@@ -41,15 +14,6 @@
       "linkedinId": "anthony-gagnon-847338170",
       "githubId": "gagnonanthony",
       "phdStartYear": 2023
-    },
-    {
-      "name": "Erick Hernandez Gutierrez",
-      "websiteUrl": "",
-      "scholarId": "",
-      "twitterId": "",
-      "linkedinId": "",
-      "githubId": "ErickHernandezGutierrez",
-      "phdStartYear": 2020
     },
     {
       "name": "Charles Poirier",
