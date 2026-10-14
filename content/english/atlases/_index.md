@@ -30,7 +30,7 @@ The SCIL has created several bundle atlases that facilitate the extraction of sp
 {{</ faq >}}
 
 {{< faq "Trigeminal" >}}
-<img src="https://github.com/scilus/trigeminal/raw/main/documentations/trigeminal_3D_rendering.png" alt="drawing" height="400"/>
+<img src="https://github.com/scilus/trigeminal/blob/main/documentations/sagittal.png?raw=true" alt="drawing" height="400"/>
 
 *Extraction of the trigeminal nerve pathways using diffusion MRI tractography.*
 
