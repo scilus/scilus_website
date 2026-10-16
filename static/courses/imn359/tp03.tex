@@ -32,7 +32,7 @@ lecture. Des points seront attribués pour la qualité du document
 % latex
 et ses figures (5 points), et la qualité du code Python (5 points). 
 
-{\bf La date de remise est 16 novembre. À confirmer en classe.}
+{\bf La date de remise est 15 novembre. À confirmer en classe.}
 % Exercice 1.
 % g0(n) = [0.5 1 1 0.5].
 % 1. Calculer G0(k) = TFD[g0(n)] pour N = 4.
@@ -106,15 +106,16 @@ et ses figures (5 points), et la qualité du code Python (5 points).
   
   \begin{enumerate}  
   \vspace{0.5cm}  
-  \item En Python, construiser
+  \item (3 pts) En Python, construiser
     et illustrer la Gaussienne 1D et sa TF de l'énoncé, utilisant
     un $\sigma = 6$ et $N$ points discrets de temps $t$. Calculez
     l'aire sous la courbe de la Gaussienne. L'aire sous la courbe
-    devrait être approximativement la même peu importe le $N$ choisi.
+    devrait être approximativement la même peu importe le $N$
+    choisi. (3 pts)
     
   
 \vspace{0.5cm}  
-  \item En utilisant la \emph{fft} de Python, calculer et illustrer sa
+  \item (4 pts) En utilisant la \emph{fft} de Python, calculer et illustrer sa
     transformée de Fourier $G(f)$. \\
     Visualiser le résultat et assurez-vous que le résultat théorique
     de la partie a) correspond à votre résultat trouvé numériquement.\\
@@ -132,7 +133,7 @@ et ses figures (5 points), et la qualité du code Python (5 points).
     \end{enumerate}
 
 \vspace{0.5cm}  
-  \item Charger le signal 1D 'piece-regular'
+  \item (3 pts) Charger le signal 1D 'piece-regular'
     (piece-regular.mat). En utilisant la fonction \emph{rand},
     ajouter-y  un bruit additif avec un 
     écart type de votre choix (piece-regular + $\tau
@@ -141,7 +142,7 @@ et ses figures (5 points), et la qualité du code Python (5 points).
     Illustrer le signal et sa version bruité en faisant un subplot.
 
 \vspace{0.5cm}  
-  \item Illustrer de façon pratique le théorème de convolution. $(f *
+  \item (10 pts) Illustrer de façon pratique le théorème de convolution. $(f *
     g)(t) = \mathcal{TF}^{-1}(F(w) G(w))$.
 
   \begin{enumerate}
@@ -176,7 +177,7 @@ et ses figures (5 points), et la qualité du code Python (5 points).
 \newpage
 \item {\bf TFD 2D [20 pts]} 
 \begin{enumerate}
-\item Construiser un filtre cosinusoidal 1D avec un support de
+\item (2 pts) Construiser un filtre cosinusoidal 1D avec un support de
   $[-\pi, \pi]$. Illustrer-le.  \\
   (Indice: Votre filtre devrait ressembler à
   une fonction porte centrée à l'origine avec des transitions moins
@@ -191,18 +192,18 @@ et ses figures (5 points), et la qualité du code Python (5 points).
   \end{center}
 \end{figure}
 
-  \item Généraliser ce filtre en 2D. Illustrer-le. (Explorer la
+  \item (2 pts) Généraliser ce filtre en 2D. Illustrer-le. (Explorer la
   fonction \emph{mesh} de Python pour l'illustrer.) 
 
  \vspace{0.5cm}
-  \item Charger l'image de Lena (lena.mat) et calculer sa transformée Fourier
+  \item (2 pts) Charger l'image de Lena (lena.mat) et calculer sa transformée Fourier
   2D (\emph{fft2}). Illustrer Lena et l'image du spectre dans l'espace de Fourier
   sur une échelle logarithmique. (Faites un subplot) Que remarquez
   vous dans le contenu fréquentiel de Lena? 
 
  \vspace{0.5cm}
 
-  \item En traitement d'image, pour estimer le vrai contenu
+  \item (4 pts) En traitement d'image, pour estimer le vrai contenu
   fréquentiel d'une image et non pas ses artéfactes, on
   \emph{multiplie} 
   souvent l'image par une fonction de fenêtrage. Utiliser le filtre
@@ -215,7 +216,7 @@ et ses figures (5 points), et la qualité du code Python (5 points).
 
  \vspace{0.5cm}
 
-\item Directement dans l'espace de Fourier, appliquer un filtre
+\item (5 pts) Directement dans l'espace de Fourier, appliquer un filtre
   passe-bas sur le spectre de Lena.  Votre filtre passe-pas devrait
   garder seulement  les basses fréquences dans un carré 
   autour de l'origine du spectre. Définisser votre filtre de telle
@@ -228,7 +229,7 @@ et ses figures (5 points), et la qualité du code Python (5 points).
   le TP4)
 
  \vspace{0.5cm}
-  \item Reconstruire l'image de Lena à partir des 3 spectres
+  \item (5 pts) Reconstruire l'image de Lena à partir des 3 spectres
   filtrés. Illustrer les résultats sur un subplot. Rapporter l'erreur
   quadratique moyenne de chaque image 
   reconstruite et le pourcentage 
@@ -248,7 +249,7 @@ et ses figures (5 points), et la qualité du code Python (5 points).
   inverse). 
 \vspace{0.5cm}
 \begin{enumerate}
-  \item À partir de l'image k-space, mettez une ligne sur
+  \item (3 pts) À partir de l'image k-space, mettez une ligne sur
   $N$ ($N = 2,\, 3,\, 4$) à zéro.  C'est-à-dire, remplacer par des zéros une
   ligne sur $N$ du k-space. C'est comme si vous aviez échantillonné ou
   mesuré le signal IRM avec une ligne sur $N$ en moins.\\
@@ -256,12 +257,12 @@ et ses figures (5 points), et la qualité du code Python (5 points).
   et rapporter le pourcentage de points utilisés dans le titre de la figure. 
   Que remarquez-vous? 
 \vspace{0.5cm}
-  \item À partir de l'image k-space, faites la même chose sur les
+  \item (3 pts) À partir de l'image k-space, faites la même chose sur les
     colonnes et illustrez la reconstruction en rapportant 
     le pourcentage de points utilisez. Que
     remarquez-vous? 
 \vspace{0.5cm}
-  \item Ajouter des zéros à l'image de k-space pour qu'elle soit de
+  \item (6 pts) Ajouter des zéros à l'image de k-space pour qu'elle soit de
   taille, 600x600, 850x850, 1024x1024. Illustrez vos
   reconstructions. Que remarquez-vous? Cette technique s'appelle le
   \emph{zero padding}. D'après vous, le zero padding donne une image
@@ -269,13 +270,13 @@ et ses figures (5 points), et la qualité du code Python (5 points).
   {\bf Bonus}: Analyser mathétiquement ce qui se passe en faisant du
   zero padding. 
 \vspace{0.5cm}
-  \item Maintenant, faites un échantillonnage radial de l'image de
+  \item (5 pts) Maintenant, faites un échantillonnage radial de l'image de
   k-space. C'est-à-dire, tracez des droites traversant l'origine
   à chaque angle $\theta$ (voir la Figure 2). Faites-le pour 3
   $\theta$ différents, illustrez les reconstructions en rapportant
   le pourcentage de points utilisez. Que remarquez-vous?
 \vspace{0.5cm}
-  \item Enfin, faites une échantillonnage aléatoire de l'image de
+  \item (3 pts) Enfin, faites une échantillonnage aléatoire de l'image de
   k-space en gardant un certain pourcentage $P$ des points du
   k-space. Faites-le pour 3 $P$ différents,   illustrez les
   reconstructions en rapportant le pourcentage de points utilisez. Que
