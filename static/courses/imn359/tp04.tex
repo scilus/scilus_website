@@ -52,7 +52,8 @@ assurez-vous de toujours prendre les mêmes $M$.
   \item Décrivez votre choix de taille de segment et nombres de
     coefficients à couper $M$.
   \item Faites des approximations linéaires et non-linéaires de votre
-    signal
+    signal. Montrez des images de vos fréquences sous les
+    approximations. 
   \item Rapporter les erreures quadratiques moyennes de toutes les
     approximations dans un tableau.  
   \end{enumerate}
@@ -177,32 +178,30 @@ assurez-vous de toujours prendre les mêmes $M$.
 \item  [5 pts] a) {\bf Approximation de Fourier.} L'approximation linéaire garde
   que les $M$ coefficients de plus basses fréquences dans l'espace
   de Fourier. Faites l'approximation linéaire dans Fourier gardant que 
-  $M$ coefficients, pour 3 $M$ différents et rapportez le SNR des
-  images approximées ainsi que les erreurs relatives d'approximation
-  sur les \emph{plot}.  Illustrez les images des coefficients des transformées
-  avant et après approximations linéaires.  (Vous avez déjà fait cela
+  $M$ coefficients, pour 3 $M$ différents et rapportez les erreurs
+  relatives d'approximation sur les \emph{imshow}.
+  {\bf Illustrez les images des fréquences des transformées
+  avant et après approximations linéaires.}  (Vous avez déjà fait cela
   dans le TP3) 
   
 \item [10 pts] b) {\bf Approximation avec cosinus discrets et des cosinus discrets
     locaux.}  En premier temps, faites l'approximation linéaire avec 
   une transformée de cosinus discrets (DCT) et une transformée de cosinus discrets
   locaux (locDCT), gardant que les $M$ coefficients de plus basses
-  fréquences, pour 3 $M$ différents et rapportez le SNR des images
-  approximées ainsi que les erreurs relatives d'approximation sur les
-    \emph{plot}.  Utilisez les 
+  fréquences, pour 3 $M$ différents et rapportez les erreurs relatives
+  d'approximation sur les \emph{imshow}.  Utilisez les 
   fonctions \emph{dct2.py} et \emph{idct2.py}, données en classe (vous
-  devez étendre ce que j'ai déjà fait en 1D en 2D). Illustrez les
-  images des coefficients des transformées 
-  avant et après approximations linéaires.  
+  devez étendre ce que j'ai déjà fait en 1D en 2D). {\bf Illustrez les
+  images des fréquences des transformées avant et après
+  approximations linéaires.}   
 
 \item [10 pts] c) {\bf Approximation d'ondelettes de Haar
   périodiques}. À partir 
   de votre ondelette de Haar, faites
   l'approximation linéaire avec cette transformée en utilisant 3 $M$
-  différents. Rapportez le SNR des images approximées et les erreurs relatives
-  d'approximation sur les
-  \emph{plot}. Illustrez les images des coefficients des transformées
-  avant et après approximations linéaires. 
+  différents. Rapportez les erreurs relatives
+  d'approximation sur les \emph{imshow}. {\bf Illustrez les images des
+  ''fréquences'' des transformées avant et après approximations linéaires. }
   %Vous pouvez faire la version algébrique (comme en
   %classe) ou celle avec les convolutions circulaires. 
   
@@ -217,11 +216,13 @@ assurez-vous de toujours prendre les mêmes $M$.
 \item [10 pts] d) {\bf Approximations nonlinéaires.} Une approximation nonlinéaire
   garde que les $M$ coefficients les plus élévés de la
   transformée. Faites les approximations nonlinéaires 
-  avec toutes les transformées des parties (a) à (d). Illustrez-bien
-  les images des coefficients de la transformée conservées. 
+  avec toutes les transformées des parties (a) à (d). {\bf Illustrez-bien
+  les images des fréquences de la transformée conservées. }
   
-\item [10 pts] e) Faites un {\bf tableau des SNR et des erreurs
-  d'approximations linéaires et nonlinéaires}. Que remarquez-vous? 
+\item [10 pts] e) Faites un {\bf tableau des erreurs
+  d'approximations linéaires et nonlinéaires}.
+  Que remarquez-vous? Pour apprécier et observer des vraies
+  différences, il faut être assez agressif dans vos choix de $M$. 
   
 %% \item [BONUS - 10 pts] f) Tracez la courbe des erreurs
 %%   d'approximation en fonction de $M$. Pour un graphe optimal, mettez
